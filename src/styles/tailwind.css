@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+
+.cute {
+    font-family: 'Cute Font';
+}
+.bree {
+    font-family: 'Bree Serif', serif;
+}
+.kanit {
+    font-family: 'Kanit', sans-serif;
+}
+@tailwind utilities;
