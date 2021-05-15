@@ -26,7 +26,11 @@ function Header() {
                 <div className="w-full h-2/6 flex flex-col items-center justify-end">
                     <VscAccount className="w-3/6 h-12 text-gray-400 hover:text-white" />
                     <VscGear className="w-3/6 h-12 text-gray-400 hover:text-white" />
-                    <VscMail className="w-3/6 h-12 text-gray-400 hover:text-white" />
+                    <div className="w-full h-12 flex justify-center items-center">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=minchul.roh.peter@gmail.com" className="w-full">
+                            <VscMail className="w-3/6 h-12 m-auto text-gray-400 hover:text-white" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </>
