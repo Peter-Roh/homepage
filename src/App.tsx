@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { themeChange } from 'theme-change';
+import './styles/styles.css';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 function App() {
+  useEffect(() => {
+    themeChange(false);
+  }, []);
+
   return (
-    <div className="App text-3xl font-bold prose prose-xl">
-      <p className="underline">hello world</p>
-      <button type="button" className="btn">
-        button
-      </button>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 

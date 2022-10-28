@@ -41,6 +41,7 @@
             }
         ],
         "react/react-in-jsx-scope": "off",
+        "react/jsx-curly-brace-presence": "off",
         "no-duplicate-imports": "error"
     },
     "settings": {
