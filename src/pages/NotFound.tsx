@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { themeChange } from 'theme-change';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 function NotFound() {
+  useEffect(() => {
+    themeChange(false);
+  }, []);
+
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center">
+    <div className="page-full flex-y-center">
       <Helmet>
         <title>Page Not Found</title>
       </Helmet>
@@ -16,7 +21,7 @@ function NotFound() {
       </div>
       <div>
         <Link to="/">
-          <button className="btn btn-secondary" type="button">
+          <button className="btn btn-secondary rounded-md" type="button">
             Go Home
           </button>
         </Link>

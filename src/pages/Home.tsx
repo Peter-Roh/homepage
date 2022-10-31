@@ -5,12 +5,12 @@ import Footer from '../components/Footer';
 
 function Home() {
   return (
-    <div className="flex flex-col w-full min-h-screen">
+    <div className="page-full">
       <Helmet>
         <title>Roh Minchul | Home</title>
       </Helmet>
       <Header />
-      <div className="page">
+      <div className="page-responsive">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum
         perferendis placeat voluptatem, eos sapiente assumenda officia expedita
         est eaque provident. Consectetur fugiat magni accusamus exercitationem

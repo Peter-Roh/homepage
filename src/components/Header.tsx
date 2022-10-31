@@ -1,14 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DarkModeToggleButton from './DarkModeToggleButton';
 
 function Header() {
-  const menuList: string[] = ['Home', 'Resume', 'Contact'];
+  const menuList: string[][] = [
+    ['Home', '/'],
+    ['Resume', '/resume'],
+    ['Contact', '/contact']
+  ];
 
   return (
-    <div className="bg-primary h-24 flex items-center justify-between page">
-      <div className="flex font-sans font-normal">
-        {menuList.map((menu: string) => {
-          return <div key={menu}>{menu}</div>;
+    <div className="bg-primary h-24 flex items-center justify-between page-responsive">
+      <div className="flex-x-center font-sans font-normal">
+        {menuList.map((elt: string[]) => {
+          return (
+            <div key={elt[1]}>
+              <Link to={elt[1]}>{elt[0]}</Link>
+            </div>
+          );
         })}
       </div>
       <div className="flex-x-center">

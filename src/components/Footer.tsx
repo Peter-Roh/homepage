@@ -13,7 +13,7 @@ function Footer() {
   }, []);
 
   return (
-    <div className="footer gap-y-4 items-center py-4 bg-primary text-primary-content mt-auto page">
+    <div className="footer gap-y-4 items-center py-4 bg-primary text-primary-content mt-auto page-responsive">
       <div>
         <p>© 2022. All rights reserved by Roh Minchul</p>
       </div>
