@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import i18n from 'i18next';
 import DarkModeToggleButton from './DarkModeToggleButton';
 
 function Header() {
@@ -21,7 +22,17 @@ function Header() {
         })}
       </div>
       <div className="flex-x-center">
-        <div className="flex-x-center">
+        <div
+          className="flex-x-center"
+          role="presentation"
+          onClick={() => {
+            if (localStorage.getItem('i18nextLng') === 'en-US') {
+              i18n.changeLanguage('ko-KR');
+            } else if (localStorage.getItem('i18nextLng') === 'ko-KR') {
+              i18n.changeLanguage('en-US');
+            }
+          }}
+        >
           <svg
             className="fill-current w-8 h-8"
             xmlns="http://www.w3.org/2000/svg"
