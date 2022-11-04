@@ -42,7 +42,8 @@
         ],
         "react/react-in-jsx-scope": "off",
         "react/jsx-curly-brace-presence": "off",
-        "no-duplicate-imports": "error"
+        "no-duplicate-imports": "error",
+        "jsx-a11y/no-noninteractive-tabindex": "off"
     },
     "settings": {
         "import/resolver": {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import i18n from 'i18next';
+import Menu from './Menu';
 import DarkModeToggleButton from './DarkModeToggleButton';
 
 function Header() {
@@ -12,15 +12,7 @@ function Header() {
 
   return (
     <div className="bg-primary h-24 flex items-center justify-between page-responsive">
-      <div className="flex-x-center font-sans font-normal">
-        {menuList.map((elt: string[]) => {
-          return (
-            <div key={elt[1]}>
-              <Link to={elt[1]}>{elt[0]}</Link>
-            </div>
-          );
-        })}
-      </div>
+      <Menu menuList={menuList} />
       <div className="flex-x-center">
         <div
           className="flex-x-center"
