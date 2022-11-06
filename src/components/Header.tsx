@@ -13,7 +13,7 @@ function Header() {
   return (
     <div className="bg-primary h-24 flex items-center justify-between page-responsive">
       <Menu menuList={menuList} />
-      <div className="flex-x-center">
+      <div className="flex-x-center text-info-content">
         <LanguageModal />
         <DarkModeToggleButton />
       </div>

@@ -34,8 +34,8 @@ function LanguageModal() {
           <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z" />
         </svg>
       </div>
-      <ul className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-        <li className="flex">
+      <ul className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-48">
+        <li className="flex text-sm">
           <button
             type="button"
             className={`flex ${getCurrentLang() === ENG ? 'active' : ''}`}
@@ -45,7 +45,7 @@ function LanguageModal() {
             <p>English</p>
           </button>
         </li>
-        <li className="flex">
+        <li className="flex text-sm">
           <button
             type="button"
             className={`flex ${getCurrentLang() === KOR ? 'active' : ''}`}
