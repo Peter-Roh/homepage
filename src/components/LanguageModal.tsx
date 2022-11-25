@@ -2,15 +2,13 @@ import React, { useCallback, useMemo } from 'react';
 import i18n from 'i18next';
 import AmericanFlag from '../assets/american_flag.png';
 import KoreanFlag from '../assets/korean_flag.png';
+import { getCurrentLang } from '../utils/common';
 
 function LanguageModal() {
   const ENG = useMemo(() => 'en-US', []);
   const KOR = useMemo(() => 'ko-KR', []);
   const changeLang = useCallback((lang: string) => {
     i18n.changeLanguage(lang);
-  }, []);
-  const getCurrentLang = useCallback(() => {
-    return localStorage.getItem('i18nextLng') || '';
   }, []);
 
   return (

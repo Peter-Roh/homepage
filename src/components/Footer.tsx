@@ -1,16 +1,13 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBlog } from '@fortawesome/free-solid-svg-icons';
+import { openInNewTab } from '../utils/common';
 
 function Footer() {
   const GITHUB_URL = 'https://github.com/Peter-Roh';
   const BLOG_URL = 'https://velog.io/@rmc2';
   const LINKEDIN_URL = 'https://www.linkedin.com/in/minchulroh/';
-
-  const openInNewTab = useCallback((url: string) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
-  }, []);
 
   return (
     <div className="footer gap-y-4 items-center py-4 bg-primary text-info-content mt-auto page-responsive">
