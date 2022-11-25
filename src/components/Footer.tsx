@@ -1,8 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBlog } from '@fortawesome/free-solid-svg-icons';
-import { openInNewTab } from '../utils/common';
+import FooterIcon from './FooterIcon';
 
 function Footer() {
   const GITHUB_URL = 'https://github.com/Peter-Roh';
@@ -15,27 +14,9 @@ function Footer() {
         <p>© 2022. All rights reserved by Roh Minchul</p>
       </div>
       <div className="flex-x-center ml-auto">
-        <div
-          className="ml-1.5 cursor-pointer"
-          role="presentation"
-          onClick={() => openInNewTab(GITHUB_URL)}
-        >
-          <FontAwesomeIcon icon={faGithub} size="2x" />
-        </div>
-        <div
-          className="ml-1.5 cursor-pointer"
-          role="presentation"
-          onClick={() => openInNewTab(BLOG_URL)}
-        >
-          <FontAwesomeIcon icon={faBlog} size="2x" />
-        </div>
-        <div
-          className="ml-1.5 cursor-pointer"
-          role="presentation"
-          onClick={() => openInNewTab(LINKEDIN_URL)}
-        >
-          <FontAwesomeIcon icon={faLinkedin} size="2x" />
-        </div>
+        <FooterIcon url={GITHUB_URL} icon={faGithub} />
+        <FooterIcon url={BLOG_URL} icon={faBlog} />
+        <FooterIcon url={LINKEDIN_URL} icon={faLinkedin} />
       </div>
     </div>
   );
