@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { IMenu } from '../types/types';
+import MenuButton from './MenuButton';
 
-interface MenuProps {
-  menuList: string[][];
-}
+function Menu() {
+  const menuList: IMenu[] = useMemo(
+    () => [
+      {
+        name: 'Home',
+        url: '/'
+      },
+      {
+        name: 'Resume',
+        url: '/resume'
+      },
+      {
+        name: 'Contact',
+        url: '/contact'
+      }
+    ],
+    []
+  );
 
-function Menu({ menuList }: MenuProps) {
   return (
     <div>
       <div className="md:hidden dropdown text-info-content">
@@ -27,25 +43,18 @@ function Menu({ menuList }: MenuProps) {
           tabIndex={0}
           className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-44"
         >
-          {menuList.map((elt: string[]) => {
+          {menuList.map((menu: IMenu) => {
             return (
-              <li key={elt[1]} className="font-medium text-sm">
-                <Link to={elt[1]}>{elt[0]}</Link>
+              <li key={menu.name} className="font-medium text-sm">
+                <Link to={menu.url}>{menu.name}</Link>
               </li>
             );
           })}
         </ul>
       </div>
       <div className="flex-x-center font-mono font-semibold antialiased hidden md:flex">
-        {menuList.map((elt: string[]) => {
-          return (
-            <div
-              key={elt[1]}
-              className="mr-8 underline-offset-2 text-info-content hover:underline hover:decoration-secondary hover:subpixel-antialiased"
-            >
-              <Link to={elt[1]}>{elt[0]}</Link>
-            </div>
-          );
+        {menuList.map((menu: IMenu) => {
+          return <MenuButton key={menu.name} name={menu.name} url={menu.url} />;
         })}
       </div>
     </div>

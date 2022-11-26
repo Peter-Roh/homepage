@@ -19,8 +19,8 @@ function Home() {
       </Helmet>
       <Header />
       <div className="page-responsive">
-        <div className="mx-auto flex flex-col md:flex-row md:items-start md:justify-between mt-14">
-          <div className="flex flex-col items-center md:items-start justify-between h-60">
+        <div className="mx-auto flex flex-col md:flex-row md:items-start md:justify-between mt-14 mb-14">
+          <div className="flex flex-col items-start md:items-start justify-between h-60">
             <div className="flex flex-col h-full">
               <p className="mb-4">{t('HOME_JOB')}</p>
               <p
@@ -42,7 +42,7 @@ function Home() {
             </div>
           </div>
           <div className="avatar mt-12 md:mt-0 mx-auto md:mx-0">
-            <div className="w-60 rounded">
+            <div className="w-full md:w-60 rounded">
               <img src={Me} alt="me" />
             </div>
           </div>

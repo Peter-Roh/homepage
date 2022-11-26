@@ -1,15 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { themeChange } from 'theme-change';
+import { IContactInfo } from '../types/types';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactInfo from '../components/ContactInfo';
 
 function Contact() {
-  const contactInfos: string[][] = [
-    ['Email', 'minchul.roh.peter@gmail.com'],
-    ['Phone Number', '+82 - 10 - 8222 - 9249']
-  ];
+  const contactInfos: IContactInfo[] = useMemo(
+    () => [
+      {
+        method: 'Email',
+        detail: ['minchul.roh.peter@gmail.com', 'rmc2@naver.com']
+      },
+      {
+        method: 'Phone Number',
+        detail: ['+82 - 10 - 8222 - 9249']
+      },
+      {
+        method: 'Location',
+        detail: ['CONTACT_LOCATION'],
+        doTranslate: true
+      }
+    ],
+    []
+  );
 
   useEffect(() => {
     themeChange(false);
@@ -23,12 +38,13 @@ function Contact() {
       <Header />
       <div className="page-responsive">
         <div className="mt-14">
-          {contactInfos.map((contactInfo) => {
+          {contactInfos.map((contactInfo: IContactInfo) => {
             return (
               <ContactInfo
-                key={contactInfo[0]}
-                title={contactInfo[0]}
-                detail={contactInfo[1]}
+                key={contactInfo.method}
+                method={contactInfo.method}
+                detail={contactInfo.detail}
+                doTranslate={contactInfo.doTranslate}
               />
             );
           })}

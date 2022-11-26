@@ -1,15 +1,20 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { IContactInfo } from '../types/types';
 
-interface ContactInfoProps {
-  title: string;
-  detail: string;
-}
+function ContactInfo({ method, detail, doTranslate }: IContactInfo) {
+  const { t } = useTranslation();
 
-function ContactInfo({ title, detail }: ContactInfoProps) {
   return (
     <div className="mb-2">
-      <p className="text-sky-500 font-semibold">{title}</p>
-      <p className="mt-1 text-base font-medium">{detail}</p>
+      <p className="text-sky-500 font-semibold">{method}</p>
+      {detail.map((elt: string) => {
+        return (
+          <p className="mt-1 text-base font-medium" key={elt}>
+            {doTranslate ? t(elt) : elt}
+          </p>
+        );
+      })}
     </div>
   );
 }

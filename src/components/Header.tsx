@@ -4,15 +4,9 @@ import LanguageModal from './LanguageModal';
 import DarkModeToggleButton from './DarkModeToggleButton';
 
 function Header() {
-  const menuList: string[][] = [
-    ['Home', '/'],
-    ['Resume', '/resume'],
-    ['Contact', '/contact']
-  ];
-
   return (
     <div className="bg-primary h-24 flex items-center justify-between page-responsive">
-      <Menu menuList={menuList} />
+      <Menu />
       <div className="flex-x-center text-info-content">
         <LanguageModal />
         <DarkModeToggleButton />
