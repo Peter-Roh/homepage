@@ -1,5 +1,9 @@
 {
-    "HOME_NAME": "Roh\nMinchul",
+    "HOME_NAME": "Roh Minchul",
     "HOME_JOB": "SOFTWARE ENGINEER",
-    "CONTACT_LOCATION": "Gyeonggi-do, Korea"
+    "CONTACT_MESSAGE": "Thank you for visiting my website. Please email me for any reason. ",
+    "CONTACT_EMAIL": "Email",
+    "CONTACT_PHONE": "Phone Number",
+    "CONTACT_LOCATION": "Location",
+    "CONTACT_LOCATION_CONTENT": "Gunpo-si, Gyeonggi-do, Republic of Korea"
 }

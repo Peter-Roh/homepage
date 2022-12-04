@@ -7,7 +7,7 @@ function ContactInfo({ method, detail, doTranslate }: IContactInfo) {
 
   return (
     <div className="mb-2">
-      <p className="text-sky-500 font-semibold">{method}</p>
+      <p className="text-sky-500 font-semibold">{t(method)}</p>
       {detail.map((elt: string) => {
         return (
           <p className="mt-1 text-base font-medium" key={elt}>

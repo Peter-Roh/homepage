@@ -1,14 +1,13 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Me from '../assets/me.jpeg';
-import { getCurrentLang, openInNewTab } from '../utils/common';
+import { openInNewTab } from '../utils/common';
 
 function Home() {
   const { t } = useTranslation();
-  const ENG = useMemo(() => 'en-US', []);
   const CV_URL =
     'https://drive.google.com/file/d/183ipqkyfei8upku3q2a04stW_jPyCiD4/view?usp=sharing';
 
@@ -23,13 +22,10 @@ function Home() {
           <div className="flex flex-col items-start md:items-start justify-between h-60">
             <div className="flex flex-col h-full">
               <p className="mb-4">{t('HOME_JOB')}</p>
-              <p
-                className={`${
-                  getCurrentLang() === ENG ? 'font-monoton' : 'font-jua'
-                } text-6xl font-extrabold`}
-              >
+              <p className="text-6xl font-extrabold font-sans">
                 {t('HOME_NAME')}
               </p>
+              {/* <p className="mt-4 ml-auto font-serif">company</p> */}
               <div className="mt-auto">
                 <button
                   type="button"

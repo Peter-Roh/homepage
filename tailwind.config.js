@@ -3,14 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
-  theme: {
-    extend: {
-      fontFamily: {
-        'monoton': [`"Monoton"`, 'cursive'],
-        'jua': [`Jua`, 'sans-serif']
-      }
-    },
-  },
+  theme: {},
   plugins: [
     require("@tailwindcss/typography"),
     require("daisyui")

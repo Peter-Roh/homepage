@@ -1,5 +1,9 @@
 {
     "HOME_NAME": "노민철",
     "HOME_JOB": "소프트웨어 엔지니어",
-    "CONTACT_LOCATION": "대한민국 경기도"
+    "CONTACT_MESSAGE": "제 홈페이지를 방문해 주셔서 감사합니다. 언제든지 이메일로 연락주세요. ",
+    "CONTACT_EMAIL": "이메일",
+    "CONTACT_PHONE": "전화번호",
+    "CONTACT_LOCATION": "거주지",
+    "CONTACT_LOCATION_CONTENT": "대한민국 경기도 군포시"
 }
