@@ -11,8 +11,8 @@ function Menu() {
         url: '/'
       },
       {
-        name: 'Resume',
-        url: '/resume'
+        name: 'Info',
+        url: '/Info'
       },
       {
         name: 'Contact',

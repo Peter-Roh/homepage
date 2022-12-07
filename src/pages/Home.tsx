@@ -9,7 +9,7 @@ import { openInNewTab } from '../utils/common';
 function Home() {
   const { t } = useTranslation();
   const CV_URL =
-    'https://drive.google.com/file/d/183ipqkyfei8upku3q2a04stW_jPyCiD4/view?usp=sharing';
+    'https://drive.google.com/file/d/1grYY7ydYvBnM5OCALmjvv3fvT20QXpii/view?usp=sharing';
 
   return (
     <div className="page-full">
