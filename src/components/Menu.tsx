@@ -12,7 +12,7 @@ function Menu() {
       },
       {
         name: 'Info',
-        url: '/Info'
+        url: '/info'
       },
       {
         name: 'Contact',

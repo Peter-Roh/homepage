@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import i18n from 'i18next';
 import AmericanFlag from '../assets/american_flag.png';
 import KoreanFlag from '../assets/korean_flag.png';
@@ -7,8 +7,14 @@ import { getCurrentLang } from '../utils/common';
 function LanguageModal() {
   const ENG = useMemo(() => 'en-US', []);
   const KOR = useMemo(() => 'ko-KR', []);
+  const [currentLang, setCurrentLang] = useState<string>(
+    getCurrentLang() === ENG || getCurrentLang() === KOR
+      ? getCurrentLang()
+      : ENG
+  );
   const changeLang = useCallback((lang: string) => {
     i18n.changeLanguage(lang);
+    setCurrentLang(lang);
   }, []);
 
   return (
@@ -36,7 +42,7 @@ function LanguageModal() {
         <li className="flex text-sm">
           <button
             type="button"
-            className={`flex ${getCurrentLang() === ENG ? 'active' : ''}`}
+            className={`flex ${currentLang === ENG ? 'active' : ''}`}
             onClick={() => changeLang(ENG)}
           >
             <img src={AmericanFlag} alt="american flag" className="w-8 h-6" />
@@ -46,7 +52,7 @@ function LanguageModal() {
         <li className="flex text-sm">
           <button
             type="button"
-            className={`flex ${getCurrentLang() === KOR ? 'active' : ''}`}
+            className={`flex ${currentLang === KOR ? 'active' : ''}`}
             onClick={() => changeLang(KOR)}
           >
             <img src={KoreanFlag} alt="korean flag" className="w-8 h-6" />

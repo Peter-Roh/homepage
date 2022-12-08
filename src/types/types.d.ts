@@ -15,3 +15,14 @@ export interface IContactInfo {
   detail: string[];
   doTranslate?: boolean;
 }
+
+export interface IInfoContent {
+  title: string;
+  imgUrl?: string;
+  content: {
+    itemName: string;
+    subTitles: string[];
+    subInfos: string[];
+    details?: string[];
+  }[];
+}
