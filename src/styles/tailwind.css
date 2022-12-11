@@ -17,4 +17,8 @@
     @apply flex flex-col justify-center items-center;
 }
 
+.icon-box {
+    @apply w-20 cursor-help mr-2 mb-2;
+}
+
 @tailwind utilities;

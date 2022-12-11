@@ -44,7 +44,7 @@ function Contact() {
           <div className="font-sans font-bold text-2xl">CONTACT ME!</div>
           <div className="mt-1 mb-12">{t('CONTACT_MESSAGE')}</div>
           <div className="flex md:flex-row flex-col-reverse items-start md:items-center justify-between">
-            <div>
+            <div className="mb-8 md:mb-0">
               {contactInfos.map((contactInfo: IContactInfo) => {
                 return (
                   <ContactInfo
