@@ -22,7 +22,8 @@ export interface IInfoContent {
   content: {
     itemName: string;
     subTitles: string[];
-    subInfos: string[];
+    place?: string;
+    subInfo: string;
     details?: string[];
   }[];
 }

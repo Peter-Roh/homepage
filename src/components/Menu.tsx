@@ -15,6 +15,14 @@ function Menu() {
         url: '/info'
       },
       {
+        name: 'Projects',
+        url: '/projects'
+      },
+      {
+        name: 'Reading List',
+        url: '/books'
+      },
+      {
         name: 'Contact',
         url: '/contact'
       }

@@ -6,7 +6,7 @@ function InfoContent({ title, content, imgUrl }: IInfoContent) {
   const { t } = useTranslation();
 
   return (
-    <div className="mb-8">
+    <div className="mb-20">
       <p className="text-sky-500 font-semibold font-sans text-xl">{t(title)}</p>
       <div className="mt-2 flex">
         {imgUrl ? (
@@ -15,30 +15,34 @@ function InfoContent({ title, content, imgUrl }: IInfoContent) {
         <div className="w-full">
           {content.map((elt) => {
             return (
-              <div key={elt.itemName} className="mb-1">
-                <div>
-                  <div className="font-bold text-xl">{t(elt.itemName)}</div>
-                </div>
-                <div className="mt-1 flex flex-col md:flex-row items-start md:items-center justify-center">
-                  <div className="flex flex-col text-sm">
-                    {elt.subTitles.map((subTitle) => {
-                      return (
-                        <div key={subTitle} className="mb-1">
-                          {t(subTitle)}
-                        </div>
-                      );
-                    })}
+              <div key={elt.itemName} className="mb-16">
+                <div className="flex flex-col md:flex-row items-start justify-between">
+                  <div>
+                    <div className="min-h-8 font-bold text-xl">
+                      {t(elt.itemName)}
+                    </div>
+                    <div className="text-sm">
+                      {elt.subTitles.map((subTitle) => {
+                        return <div key={subTitle}>{t(subTitle)}</div>;
+                      })}
+                    </div>
                   </div>
-                  <div className="md:ml-auto text-sm italic">
-                    {elt.subInfos.map((subInfo) => {
-                      return (
-                        <div key={subInfo} className="mb-0.5 md:text-right">
-                          {t(subInfo)}
-                        </div>
-                      );
-                    })}
+                  <div className="mt-0.5 md:mt-0 text-left md:text-right text-sm italic">
+                    <div className="md:min-h-8 flex md:justify-end items-center">
+                      {elt.place ? t(elt.place) : null}
+                    </div>
+                    <div key={elt.subInfo} className="mt-auto">
+                      {t(elt.subInfo)}
+                    </div>
                   </div>
                 </div>
+                {elt.details ? (
+                  <div className="mt-2 font-sans">
+                    {elt.details.map((detail) => {
+                      return <div key={detail}>• {t(detail)}</div>;
+                    })}
+                  </div>
+                ) : null}
               </div>
             );
           })}

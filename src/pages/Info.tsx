@@ -15,17 +15,22 @@ function Info() {
         {
           itemName: 'INFO_EXPERIENCE_ITEMNAME1',
           subTitles: ['INFO_EXPERIENCE_SUBTITLE1'],
-          subInfos: ['INFO_EXPERIENCE_PLACE1', 'INFO_EXPERIENCE_PERIOD1']
+          place: 'INFO_EXPERIENCE_PLACE1',
+          subInfo: 'INFO_EXPERIENCE_PERIOD1',
+          details: ['INFO_EXPERIENCE_DETAIL1']
         },
         {
           itemName: 'INFO_EXPERIENCE_ITEMNAME2',
           subTitles: ['INFO_EXPERIENCE_SUBTITLE2'],
-          subInfos: ['INFO_EXPERIENCE_PLACE2', 'INFO_EXPERIENCE_PERIOD2']
+          place: 'INFO_EXPERIENCE_PLACE2',
+          subInfo: 'INFO_EXPERIENCE_PERIOD2'
         },
         {
           itemName: 'INFO_EXPERIENCE_ITEMNAME3',
           subTitles: ['INFO_EXPERIENCE_SUBTITLE3'],
-          subInfos: ['INFO_EXPERIENCE_PLACE3', 'INFO_EXPERIENCE_PERIOD3']
+          place: 'INFO_EXPERIENCE_PLACE3',
+          subInfo: 'INFO_EXPERIENCE_PERIOD3',
+          details: ['INFO_EXPERIENCE_DETAIL3']
         }
       ]
     },
@@ -35,7 +40,7 @@ function Info() {
         {
           itemName: '',
           subTitles: [''],
-          subInfos: ['']
+          subInfo: ''
         }
       ]
     },
@@ -46,7 +51,7 @@ function Info() {
         {
           itemName: 'INFO_EDUCATION_ITEMNAME',
           subTitles: ['INFO_EDUCATION_SUBTITLE1', 'INFO_EDUCATION_SUBTITLE2'],
-          subInfos: ['INFO_EDUCATION_PERIOD']
+          subInfo: 'INFO_EDUCATION_PERIOD'
         }
       ]
     },
@@ -56,7 +61,8 @@ function Info() {
         {
           itemName: 'INFO_AWARD_ITEMNAME',
           subTitles: ['INFO_AWARD_SUBTITLE'],
-          subInfos: ['INFO_AWARD_ORG', 'INFO_AWARD_PERIOD']
+          place: 'INFO_AWARD_ORG',
+          subInfo: 'INFO_AWARD_PERIOD'
         }
       ]
     },
@@ -64,9 +70,9 @@ function Info() {
       title: 'INFO_LANGUAGE_TITLE',
       content: [
         {
-          itemName: '',
-          subTitles: [''],
-          subInfos: ['']
+          itemName: 'INFO_LANGUAGE_ITEMNAME',
+          subTitles: ['INFO_LANGUAGE_SUBTITLE'],
+          subInfo: 'INFO_LANGUAGE_PERIOD'
         }
       ]
     },
@@ -76,7 +82,7 @@ function Info() {
         {
           itemName: 'INFO_MILITARY_ITEMNAME',
           subTitles: ['INFO_MILITARY_SUBTITLE'],
-          subInfos: ['INFO_MILITARY_PERIOD']
+          subInfo: 'INFO_MILITARY_PERIOD'
         }
       ]
     }
