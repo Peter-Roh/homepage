@@ -9,7 +9,7 @@ import { openInNewTab } from '../utils/common';
 function Home() {
   const { t } = useTranslation();
   const CV_URL =
-    'https://drive.google.com/file/d/1grYY7ydYvBnM5OCALmjvv3fvT20QXpii/view?usp=sharing';
+    'https://drive.google.com/file/d/1UpDif0FTyfUxHsucpDOhlVcDBIHvPzoK/view?usp=sharing';
 
   return (
     <div className="page-full">
@@ -18,7 +18,7 @@ function Home() {
       </Helmet>
       <Header />
       <div className="page-responsive">
-        <div className="mx-auto flex flex-col-reverse md:flex-row md:items-start md:justify-start mt-14 mb-14 md:mb-36 md:shadow-md md:rounded-lg">
+        <div className="mx-auto flex flex-col-reverse md:flex-row md:items-start md:justify-start mt-14 mb-14 md:mb-20 md:shadow-md md:rounded-lg">
           <div className="avatar mt-12 md:mt-0 mx-auto md:mx-0">
             <div className="w-full md:w-60 rounded">
               <img src={Me} alt="me" />
@@ -43,7 +43,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="mb-14 md:mb-36 font-sans font-medium">
+        <div className="mb-14 md:mb-20 font-sans font-medium break-all">
           <p className="leading-loose">
             {t('HOME_GREETING1')}
             <b className="font-extrabold">{t('HOME_GREETING2')}</b>
@@ -58,7 +58,7 @@ function Home() {
         </div>
         <div className="flex flex-col md:flex-row max-w-full mb-20">
           <div>
-            <div className="font-mono font-bold text-lg underline underline-offset-4 mb-2">
+            <div className="font-mono font-bold text-lg underline underline-offset-4 mb-4">
               <p>Skills and Tools</p>
             </div>
             <div>
@@ -398,7 +398,9 @@ function Home() {
             </div>
           </div>
           <div className="divider md:divider-horizontal" />
-          <div>a</div>
+          <div className="font-mono font-bold text-lg underline underline-offset-4 mb-4">
+            <p>Hobbies and Interests</p>
+          </div>
         </div>
       </div>
       <Footer />

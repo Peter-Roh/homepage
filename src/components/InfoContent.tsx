@@ -13,9 +13,12 @@ function InfoContent({ title, content, imgUrl }: IInfoContent) {
           <img src={imgUrl} alt="info" className="mr-4 md:mr-8" />
         ) : null}
         <div className="w-full">
-          {content.map((elt) => {
+          {content.map((elt, index: number) => {
             return (
-              <div key={elt.itemName} className="mb-16">
+              <div
+                key={elt.itemName}
+                className={`${index !== content.length - 1 ? 'mb-16' : ''}`}
+              >
                 <div className="flex flex-col md:flex-row items-start justify-between">
                   <div>
                     <div className="min-h-8 font-bold text-xl">
@@ -42,7 +45,7 @@ function InfoContent({ title, content, imgUrl }: IInfoContent) {
                       return (
                         <li
                           key={detail}
-                          className="list-disc list-inside md:list-outside"
+                          className="list-disc list-inside md:list-outside mb-2"
                         >
                           {t(detail)}
                         </li>

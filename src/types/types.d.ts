@@ -12,6 +12,7 @@ export interface IMenu {
 
 export interface IContactInfo {
   method: string;
+  icon: IconDefinition;
   detail: string[];
   doTranslate?: boolean;
 }

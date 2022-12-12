@@ -5,7 +5,7 @@ import DarkModeToggleButton from './DarkModeToggleButton';
 
 function Header() {
   return (
-    <div className="bg-primary h-24 flex items-center justify-between page-responsive">
+    <div className="bg-primary h-24 flex items-center justify-between page-responsive shadow-md">
       <Menu />
       <div className="flex-x-center text-info-content">
         <LanguageModal />

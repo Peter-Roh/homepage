@@ -2,6 +2,11 @@ import React, { useEffect, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { themeChange } from 'theme-change';
 import { useTranslation } from 'react-i18next';
+import {
+  faEnvelope,
+  faLocationDot,
+  faMobileAlt
+} from '@fortawesome/free-solid-svg-icons';
 import { IContactInfo } from '../types/types';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -14,14 +19,17 @@ function Contact() {
     () => [
       {
         method: 'CONTACT_EMAIL',
+        icon: faEnvelope,
         detail: ['minchul.roh.peter@gmail.com']
       },
       {
         method: 'CONTACT_PHONE',
+        icon: faMobileAlt,
         detail: ['+82 - 10 - 7772 - 9249']
       },
       {
         method: 'CONTACT_LOCATION',
+        icon: faLocationDot,
         detail: ['CONTACT_LOCATION_CONTENT'],
         doTranslate: true
       }
@@ -50,6 +58,7 @@ function Contact() {
                   <ContactInfo
                     key={contactInfo.method}
                     method={contactInfo.method}
+                    icon={contactInfo.icon}
                     detail={contactInfo.detail}
                     doTranslate={contactInfo.doTranslate}
                   />

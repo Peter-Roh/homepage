@@ -17,13 +17,14 @@ function Info() {
           subTitles: ['INFO_EXPERIENCE_SUBTITLE1'],
           place: 'INFO_EXPERIENCE_PLACE1',
           subInfo: 'INFO_EXPERIENCE_PERIOD1',
-          details: ['INFO_EXPERIENCE_DETAIL1']
+          details: ['INFO_EXPERIENCE_DETAIL1', 'INFO_EXPERIENCE_DETAIL1_2']
         },
         {
           itemName: 'INFO_EXPERIENCE_ITEMNAME2',
           subTitles: ['INFO_EXPERIENCE_SUBTITLE2'],
           place: 'INFO_EXPERIENCE_PLACE2',
-          subInfo: 'INFO_EXPERIENCE_PERIOD2'
+          subInfo: 'INFO_EXPERIENCE_PERIOD2',
+          details: ['INFO_EXPERIENCE_DETAIL2', 'INFO_EXPERIENCE_DETAIL2_2']
         },
         {
           itemName: 'INFO_EXPERIENCE_ITEMNAME3',
