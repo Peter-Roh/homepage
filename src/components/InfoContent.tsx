@@ -37,11 +37,18 @@ function InfoContent({ title, content, imgUrl }: IInfoContent) {
                   </div>
                 </div>
                 {elt.details ? (
-                  <div className="mt-2 font-sans">
+                  <ul className="mt-2 font-sans">
                     {elt.details.map((detail) => {
-                      return <div key={detail}>• {t(detail)}</div>;
+                      return (
+                        <li
+                          key={detail}
+                          className="list-disc list-inside md:list-outside"
+                        >
+                          {t(detail)}
+                        </li>
+                      );
                     })}
-                  </div>
+                  </ul>
                 ) : null}
               </div>
             );

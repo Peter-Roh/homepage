@@ -18,8 +18,13 @@ function Home() {
       </Helmet>
       <Header />
       <div className="page-responsive">
-        <div className="mx-auto flex flex-col md:flex-row md:items-start md:justify-between mt-14 mb-14">
-          <div className="flex flex-col items-start md:items-start justify-between h-60">
+        <div className="mx-auto flex flex-col-reverse md:flex-row md:items-start md:justify-start mt-14 mb-14 md:mb-36 md:shadow-md md:rounded-lg">
+          <div className="avatar mt-12 md:mt-0 mx-auto md:mx-0">
+            <div className="w-full md:w-60 rounded">
+              <img src={Me} alt="me" />
+            </div>
+          </div>
+          <div className="flex flex-col items-start md:items-start justify-between h-60 md:p-6">
             <div className="flex flex-col h-full">
               <p className="mb-4">{t('HOME_JOB')}</p>
               <p className="text-6xl font-extrabold font-sans">
@@ -37,19 +42,27 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="avatar mt-12 md:mt-0 mx-auto md:mx-0">
-            <div className="w-full md:w-60 rounded">
-              <img src={Me} alt="me" />
-            </div>
-          </div>
         </div>
-        <div className="max-w-full flex">
-          <div className="w-full">
+        <div className="mb-14 md:mb-36 font-sans font-medium">
+          <p className="leading-loose">
+            {t('HOME_GREETING1')}
+            <b className="font-extrabold">{t('HOME_GREETING2')}</b>
+            {t('HOME_GREETING3')}
+          </p>
+          <p className="leading-loose">{t('HOME_GREETING4')}</p>
+          <p className="leading-loose">
+            {t('HOME_GREETING5')}
+            <b className="font-extrabold">{t('HOME_GREETING6')}</b>
+            {t('HOME_GREETING7')}
+          </p>
+        </div>
+        <div className="flex flex-col md:flex-row max-w-full mb-20">
+          <div>
             <div className="font-mono font-bold text-lg underline underline-offset-4 mb-2">
               <p>Skills and Tools</p>
             </div>
             <div>
-              <div className="flex mb-2 items-center flex-wrap">
+              <div className="flex md:mb-2 items-center flex-wrap">
                 <div className="icon-box" title="HTML5">
                   {/* HTML5 */}
                   <svg viewBox="0 0 128 128">
@@ -142,7 +155,7 @@ function Home() {
                   </svg>
                 </div>
               </div>
-              <div className="flex mb-2 items-center flex-wrap">
+              <div className="flex md:mb-2 items-center flex-wrap">
                 <div className="icon-box" title="react">
                   {/* react */}
                   <svg viewBox="0 0 128 128">
@@ -161,7 +174,7 @@ function Home() {
                     />
                   </svg>
                 </div>
-                <div className="icon-box" title="SASS">
+                <div className="icon-box" title="Sass">
                   {/* SASS */}
                   <svg viewBox="0 0 128 128">
                     <path
@@ -173,7 +186,7 @@ function Home() {
                   </svg>
                 </div>
               </div>
-              <div className="flex mb-2 items-center flex-wrap">
+              <div className="flex md:mb-2 items-center flex-wrap">
                 <div className="icon-box" title="Visual Studio Code">
                   {/* vscode */}
                   <svg viewBox="0 0 128 128">
@@ -384,6 +397,8 @@ function Home() {
               </div>
             </div>
           </div>
+          <div className="divider md:divider-horizontal" />
+          <div>a</div>
         </div>
       </div>
       <Footer />

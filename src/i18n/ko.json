@@ -1,6 +1,13 @@
 {
     "HOME_NAME": "노민철",
     "HOME_JOB": "소프트웨어 엔지니어",
+    "HOME_GREETING1": "안녕하세요. 웹 개발자 ",
+    "HOME_GREETING2":"노민철",
+    "HOME_GREETING3":"입니다.",
+    "HOME_GREETING4":"저는 프로그래밍, 사업, 투자, 철학 등 많은 것에 관심이 있습니다.",
+    "HOME_GREETING5":"어떤 주제든 환영입니다! ",
+    "HOME_GREETING6":"minchul.roh.peter@gmail.com",
+    "HOME_GREETING7":"으로 이메일 주세요.",
     "INFO_EXPERIENCE_TITLE": "경력",
     "INFO_EXPERIENCE_ITEMNAME1": "아이엠티소프트",
     "INFO_EXPERIENCE_SUBTITLE1": "사원",

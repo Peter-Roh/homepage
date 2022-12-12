@@ -1,6 +1,13 @@
 {
     "HOME_NAME": "Roh Minchul",
     "HOME_JOB": "SOFTWARE ENGINEER",
+    "HOME_GREETING1": "I'm ",
+    "HOME_GREETING2":"Minchul",
+    "HOME_GREETING3":", a web developer, living in Korea.",
+    "HOME_GREETING4":"I am interested in many things, such as programming, business, investment and philosophy.",
+    "HOME_GREETING5":"Send me an email via ",
+    "HOME_GREETING6":"minchul.roh.peter@gmail.com",
+    "HOME_GREETING7":", I would be happy to connect.",
     "INFO_EXPERIENCE_TITLE": "Experience",
     "INFO_EXPERIENCE_ITEMNAME1": "IMTsoft",
     "INFO_EXPERIENCE_SUBTITLE1": "Employee",

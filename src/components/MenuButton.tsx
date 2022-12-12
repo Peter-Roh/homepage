@@ -7,7 +7,7 @@ function MenuButton({ name, url }: IMenu) {
 
   return (
     <div
-      className={`mr-8 underline-offset-2 text-info-content hover:underline hover:decoration-secondary hover:subpixel-antialiased ${
+      className={`mr-8 underline-offset-4 text-info-content hover:underline hover:decoration-secondary hover:subpixel-antialiased ${
         currentUrl === url ? 'text-base-100' : ''
       }`}
     >
