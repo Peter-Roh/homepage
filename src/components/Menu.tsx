@@ -14,14 +14,10 @@ function Menu() {
         name: 'Info',
         url: '/info'
       },
-      {
-        name: 'Projects',
-        url: '/projects'
-      },
-      {
-        name: 'Reading List',
-        url: '/books'
-      },
+      // {
+      //   name: 'Projects',
+      //   url: '/projects'
+      // },
       {
         name: 'Contact',
         url: '/contact'

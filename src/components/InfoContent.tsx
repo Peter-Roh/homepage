@@ -24,19 +24,23 @@ function InfoContent({ title, content, imgUrl }: IInfoContent) {
                     <div className="min-h-8 font-bold text-xl">
                       {t(elt.itemName)}
                     </div>
-                    <div className="text-sm">
-                      {elt.subTitles.map((subTitle) => {
-                        return <div key={subTitle}>{t(subTitle)}</div>;
-                      })}
-                    </div>
+                    {elt.subTitles ? (
+                      <div className="text-sm">
+                        {elt.subTitles.map((subTitle) => {
+                          return <div key={subTitle}>{t(subTitle)}</div>;
+                        })}
+                      </div>
+                    ) : null}
                   </div>
                   <div className="mt-0.5 md:mt-0 text-left md:text-right text-sm italic">
                     <div className="md:min-h-8 flex md:justify-end items-center">
                       {elt.place ? t(elt.place) : null}
                     </div>
-                    <div key={elt.subInfo} className="mt-auto">
-                      {t(elt.subInfo)}
-                    </div>
+                    {elt.subInfo ? (
+                      <div key={elt.subInfo} className="mt-auto">
+                        {t(elt.subInfo)}
+                      </div>
+                    ) : null}
                   </div>
                 </div>
                 {elt.details ? (

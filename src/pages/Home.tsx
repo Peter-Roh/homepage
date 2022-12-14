@@ -1,6 +1,20 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faAnkh,
+  faArrowTrendUp,
+  faBook,
+  faBrain,
+  faBriefcase,
+  faCode,
+  faDumbbell,
+  faLanguage,
+  faMugHot,
+  faSeedling,
+  faShoePrints
+} from '@fortawesome/free-solid-svg-icons';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Me from '../assets/me.jpeg';
@@ -43,21 +57,22 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="mb-14 md:mb-20 font-sans font-medium break-all">
-          <p className="leading-loose">
+        <div className="mb-14 md:mb-20 font-sans font-medium break-all leading-loose md:p-4 md:shadow-md md:rounded-lg">
+          <p>
             {t('HOME_GREETING1')}
             <b className="font-extrabold">{t('HOME_GREETING2')}</b>
             {t('HOME_GREETING3')}
           </p>
-          <p className="leading-loose">{t('HOME_GREETING4')}</p>
-          <p className="leading-loose">
-            {t('HOME_GREETING5')}
-            <b className="font-extrabold">{t('HOME_GREETING6')}</b>
-            {t('HOME_GREETING7')}
+          <p>{t('HOME_GREETING4')}</p>
+          <p>{t('HOME_GREETING5')}</p>
+          <p>
+            {t('HOME_GREETING6')}
+            <b className="font-extrabold">{t('HOME_GREETING7')}</b>
+            {t('HOME_GREETING8')}
           </p>
         </div>
-        <div className="flex flex-col md:flex-row max-w-full mb-20">
-          <div>
+        <div className="flex flex-col md:flex-row max-w-full mb-20 md:p-4 md:shadow-md md:rounded-lg">
+          <div className="flex-1">
             <div className="font-mono font-bold text-lg underline underline-offset-4 mb-4">
               <p>Skills and Tools</p>
             </div>
@@ -398,8 +413,78 @@ function Home() {
             </div>
           </div>
           <div className="divider md:divider-horizontal" />
-          <div className="font-mono font-bold text-lg underline underline-offset-4 mb-4">
-            <p>Hobbies and Interests</p>
+          <div className="flex-1">
+            <div className="font-mono font-bold text-lg underline underline-offset-4 mb-4">
+              <p>Hobbies and Interests</p>
+            </div>
+            <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-1 gap-y-4">
+              <div className="flex-y-center">
+                <FontAwesomeIcon icon={faCode} size="3x" />
+                <p className="font-mono font-semibold text-sm mt-1 text-center">
+                  {t('HOME_HOBBY1')}
+                </p>
+              </div>
+              <div className="flex-y-center">
+                <FontAwesomeIcon icon={faBriefcase} size="3x" />
+                <p className="font-mono font-semibold text-sm mt-1 text-center">
+                  {t('HOME_HOBBY2')}
+                </p>
+              </div>
+              <div className="flex-y-center">
+                <FontAwesomeIcon icon={faArrowTrendUp} size="3x" />
+                <p className="font-mono font-semibold text-sm mt-1 text-center">
+                  {t('HOME_HOBBY3')}
+                </p>
+              </div>
+              <div className="flex-y-center">
+                <FontAwesomeIcon icon={faBrain} size="3x" />
+                <p className="font-mono font-semibold text-sm mt-1 text-center">
+                  {t('HOME_HOBBY4')}
+                </p>
+              </div>
+              <div className="flex-y-center">
+                <FontAwesomeIcon icon={faBook} size="3x" />
+                <p className="font-mono font-semibold text-sm mt-1 text-center">
+                  {t('HOME_HOBBY5')}
+                </p>
+              </div>
+              <div className="flex-y-center">
+                <FontAwesomeIcon icon={faMugHot} size="3x" />
+                <p className="font-mono font-semibold text-sm mt-1 text-center">
+                  {t('HOME_HOBBY6')}
+                </p>
+              </div>
+              <div className="flex-y-center">
+                <FontAwesomeIcon icon={faDumbbell} size="3x" />
+                <p className="font-mono font-semibold text-sm mt-1 text-center">
+                  {t('HOME_HOBBY7')}
+                </p>
+              </div>
+              <div className="flex-y-center">
+                <FontAwesomeIcon icon={faSeedling} size="3x" />
+                <p className="font-mono font-semibold text-sm mt-1 text-center">
+                  {t('HOME_HOBBY8')}
+                </p>
+              </div>
+              <div className="flex-y-center">
+                <FontAwesomeIcon icon={faLanguage} size="3x" />
+                <p className="font-mono font-semibold text-sm mt-1 text-center">
+                  {t('HOME_HOBBY9')}
+                </p>
+              </div>
+              <div className="flex-y-center">
+                <FontAwesomeIcon icon={faAnkh} size="3x" />
+                <p className="font-mono font-semibold text-sm mt-1 text-center">
+                  {t('HOME_HOBBY10')}
+                </p>
+              </div>
+              <div className="flex-y-center">
+                <FontAwesomeIcon icon={faShoePrints} size="3x" />
+                <p className="font-mono font-semibold text-sm mt-1 text-center">
+                  {t('HOME_HOBBY11')}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

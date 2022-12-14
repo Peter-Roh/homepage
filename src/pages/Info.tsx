@@ -39,9 +39,24 @@ function Info() {
       title: 'INFO_PROJECT_TITLE',
       content: [
         {
-          itemName: '',
-          subTitles: [''],
-          subInfo: ''
+          itemName: 'INFO_PROJECT_ITEMNAME1',
+          details: ['INFO_PROJECT_DETAIL1', 'INFO_PROJECT_DETAIL1_2']
+        },
+        {
+          itemName: 'INFO_PROJECT_ITEMNAME2',
+          details: ['INFO_PROJECT_DETAIL2', 'INFO_PROJECT_DETAIL2_2']
+        },
+        {
+          itemName: 'INFO_PROJECT_ITEMNAME3',
+          details: [
+            'INFO_PROJECT_DETAIL3',
+            'INFO_PROJECT_DETAIL3_2',
+            'INFO_PROJECT_DETAIL3_3'
+          ]
+        },
+        {
+          itemName: 'INFO_PROJECT_ITEMNAME4',
+          details: ['INFO_PROJECT_DETAIL4']
         }
       ]
     },

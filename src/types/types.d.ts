@@ -22,9 +22,9 @@ export interface IInfoContent {
   imgUrl?: string;
   content: {
     itemName: string;
-    subTitles: string[];
+    subTitles?: string[];
     place?: string;
-    subInfo: string;
+    subInfo?: string;
     details?: string[];
   }[];
 }
