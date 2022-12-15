@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/tailwind.css';
 import Home from './pages/Home';
 import Info from './pages/Info';
@@ -8,7 +8,7 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/info" element={<Info />} />
