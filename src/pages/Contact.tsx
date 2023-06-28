@@ -47,7 +47,7 @@ function Contact() {
         <title>Roh Minchul | Contact</title>
       </Helmet>
       <Header />
-      <div className="page-responsive">
+      <div className="page-responsive px-5 md:px-0">
         <div className="mt-14">
           <div className="font-sans font-bold text-2xl">CONTACT ME!</div>
           <div className="mt-1 mb-12">{t('CONTACT_MESSAGE')}</div>

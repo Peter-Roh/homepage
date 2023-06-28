@@ -17,7 +17,7 @@ function Info() {
           subTitles: ['INFO_EXPERIENCE_SUBTITLE1'],
           place: 'INFO_EXPERIENCE_PLACE1',
           subInfo: 'INFO_EXPERIENCE_PERIOD1',
-          details: ['INFO_EXPERIENCE_DETAIL1', 'INFO_EXPERIENCE_DETAIL1_2']
+          details: ['INFO_EXPERIENCE_DETAIL1']
         },
         {
           itemName: 'INFO_EXPERIENCE_ITEMNAME2',
@@ -114,7 +114,7 @@ function Info() {
         <title>Roh Minchul | Info</title>
       </Helmet>
       <Header />
-      <div className="page-responsive">
+      <div className="page-responsive px-5 md:px-0">
         <div className="mt-14">
           {infoContents.map((elt: IInfoContent) => {
             return (

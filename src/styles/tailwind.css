@@ -6,7 +6,7 @@
 }
 
 .page-responsive {
-    @apply px-5 md:px-36 xl:px-96;
+    @apply md:w-3/5 md:mx-auto;
 }
 
 .flex-x-center {
