@@ -16,7 +16,6 @@
     "HOME_HOBBY5": "독서",
     "HOME_HOBBY6": "커피 & 차",
     "HOME_HOBBY7": "운동",
-    "HOME_HOBBY8": "자기계발",
     "HOME_HOBBY9": "언어",
     "HOME_HOBBY11": "산책",
     "INFO_EXPERIENCE_TITLE": "경력",
@@ -71,5 +70,17 @@
     "CONTACT_EMAIL": "이메일",
     "CONTACT_PHONE": "전화번호",
     "CONTACT_LOCATION": "거주지",
-    "CONTACT_LOCATION_CONTENT": "대한민국 경기도 군포시"
+    "CONTACT_LOCATION_CONTENT": "대한민국 경기도 군포시",
+    "SHOPAHOLIC_TECH": "기술 스택",
+    "SHOPAHOLIC_FEATURES": "특징",
+    "SHOPAHOLIC_FEATURES1": "반응형 디자인",
+    "SHOPAHOLIC_FEATURES2": "tRPC와 Prisma를 이용한 CRUD 연산",
+    "SHOPAHOLIC_FEATURES3": "풀스택 타입 안정성",
+    "SHOPAHOLIC_FEATURES4": "패스워드 저장 없는 로그인",
+    "SHOPAHOLIC_FEATURES5": "upstash를 이용한 rate limiting",
+    "SHOPAHOLIC_FEATURES6": "Cloudflare Images를 이용한 이미지 최적화 및 저장",
+    "SHOPAHOLIC_FEATURES7": "Cloudflare Stream을 이용한 live streaming 기능",
+    "SHOPAHOLIC_DESC": "설명",
+    "SHOPAHOLIC_DESC1": "tRPC를 사용하여 풀스택 타입 안정성을 보장하는 서버리스 쇼핑몰 홈페이지입니다.",
+    "SHOPAHOLIC_VIDEO": "시연 영상"
 }

@@ -16,7 +16,6 @@
     "HOME_HOBBY5": "Reading",
     "HOME_HOBBY6": "Coffee & Tea",
     "HOME_HOBBY7": "Gym",
-    "HOME_HOBBY8": "Self Improvement",
     "HOME_HOBBY9": "Languages",
     "HOME_HOBBY11": "Walk",
     "INFO_EXPERIENCE_TITLE": "Experience",
@@ -71,5 +70,17 @@
     "CONTACT_EMAIL": "Email",
     "CONTACT_PHONE": "Phone Number",
     "CONTACT_LOCATION": "Location",
-    "CONTACT_LOCATION_CONTENT": "Gunpo-si, Gyeonggi-do, Republic of Korea"
+    "CONTACT_LOCATION_CONTENT": "Gunpo-si, Gyeonggi-do, Republic of Korea",
+    "SHOPAHOLIC_TECH": "Tech Stack",
+    "SHOPAHOLIC_FEATURES": "Features",
+    "SHOPAHOLIC_FEATURES1": "Responsive Design",
+    "SHOPAHOLIC_FEATURES2": "CRUD operations with tRPC and Prisma",
+    "SHOPAHOLIC_FEATURES3": "Full-stack typesafety",
+    "SHOPAHOLIC_FEATURES4": "Passwordless - login",
+    "SHOPAHOLIC_FEATURES5": "Rate limiting using upstash",
+    "SHOPAHOLIC_FEATURES6": "Store and optimize images using Cloudflare Images",
+    "SHOPAHOLIC_FEATURES7": "Live streaming using Cloudflare Stream",
+    "SHOPAHOLIC_DESC": "Descriptions",
+    "SHOPAHOLIC_DESC1": "Serverless shopping mall website designed to guarantee full-stack typesafety using tRPC.",
+    "SHOPAHOLIC_VIDEO": "Demonstration Videos"
 }

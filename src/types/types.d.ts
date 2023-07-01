@@ -28,3 +28,9 @@ export interface IInfoContent {
     details?: string[];
   }[];
 }
+
+export interface IProjectProps {
+  url: string;
+  title: string;
+  imgUrl: string;
+}

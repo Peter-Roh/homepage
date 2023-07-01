@@ -11,7 +11,6 @@ import {
   faDumbbell,
   faLanguage,
   faMugHot,
-  faSeedling,
   faShoePrints
 } from '@fortawesome/free-solid-svg-icons';
 import Header from '../components/Header';
@@ -30,7 +29,7 @@ function Home() {
         <title>Roh Minchul | Home</title>
       </Helmet>
       <Header />
-      <div className="md:mx-auto md:w-3/5">
+      <div className="page-responsive">
         <div className="flex flex-col-reverse px-5 md:px-0 mt-12 mb-14 md:flex-row md:items-start md:justify-start md:shadow-md md:rounded-md">
           <div className="avatar">
             <div className="md:w-60 rounded">
@@ -197,12 +196,6 @@ function Home() {
                 <FontAwesomeIcon icon={faDumbbell} size="3x" />
                 <p className="font-mono font-semibold text-sm mt-1 text-center">
                   {t('HOME_HOBBY7')}
-                </p>
-              </div>
-              <div className="flex-y-center">
-                <FontAwesomeIcon icon={faSeedling} size="3x" />
-                <p className="font-mono font-semibold text-sm mt-1 text-center">
-                  {t('HOME_HOBBY8')}
                 </p>
               </div>
               <div className="flex-y-center">
