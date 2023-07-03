@@ -34,3 +34,8 @@ export interface IProjectProps {
   title: string;
   imgUrl: string;
 }
+
+export interface IImageArray {
+  imgUrl: string;
+  title: string;
+}

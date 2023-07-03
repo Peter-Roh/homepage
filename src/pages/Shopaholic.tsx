@@ -4,6 +4,9 @@ import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { openInNewTab } from '../utils/common';
+import ImgUrl from '../assets/shopaholic.png';
+import ImageBox from '../components/ImageBox';
+import { IImageArray } from '../types/types';
 
 function Shopaholic() {
   const { t } = useTranslation();
@@ -18,8 +21,20 @@ function Shopaholic() {
       'SHOPAHOLIC_FEATURES7'
     ];
   }, []);
-  const tehcStack = useMemo(() => {
+  const techStack = useMemo(() => {
     return ['NextJS', 'TailwindCSS', 'Prisma', 'tRPC'];
+  }, []);
+  const images: IImageArray[] = useMemo(() => {
+    return [
+      {
+        imgUrl: ImgUrl,
+        title: 'a'
+      },
+      {
+        imgUrl: ImgUrl,
+        title: 'b'
+      }
+    ];
   }, []);
 
   return (
@@ -29,10 +44,10 @@ function Shopaholic() {
       </Helmet>
       <Header />
       <div className="page-responsive px-5 md:px-0">
-        <div className="mt-4 font-bold text-3xl">
+        <div className="my-6 font-bold text-3xl">
           <p>Shopaholic</p>
         </div>
-        <div className="aspect-square w-full bg-slate-600" />
+        <ImageBox images={images} />
         <div className="mt-2">
           <p className="font-bold text-xl">{t('SHOPAHOLIC_DESC')}</p>
           <div className="mt-2">{t('SHOPAHOLIC_DESC1')}</div>
@@ -64,7 +79,7 @@ function Shopaholic() {
           <p className="font-bold text-xl">{t('SHOPAHOLIC_TECH')}</p>
           <div className="mt-2">
             <ul className="font-sans">
-              {tehcStack.map((elt) => {
+              {techStack.map((elt) => {
                 return (
                   <li
                     key={elt}

@@ -11,5 +11,6 @@
         "javascriptreact",
         "typescript",
         "typescriptreact"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
 }

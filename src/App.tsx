@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/tailwind.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Home from './pages/Home';
 import Info from './pages/Info';
 import Contact from './pages/Contact';
