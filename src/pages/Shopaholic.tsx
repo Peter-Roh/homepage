@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { openInNewTab } from '../utils/common';
-import ImgUrl from '../assets/shopaholic.png';
+import ShopaholicMain from '../assets/shopaholic.png';
+import ShopaholicItem from '../assets/shopaholic_item.png';
 import ImageBox from '../components/ImageBox';
 import { IImageArray } from '../types/types';
 
@@ -27,12 +28,12 @@ function Shopaholic() {
   const images: IImageArray[] = useMemo(() => {
     return [
       {
-        imgUrl: ImgUrl,
-        title: 'a'
+        imgUrl: ShopaholicMain,
+        title: 'Main Page'
       },
       {
-        imgUrl: ImgUrl,
-        title: 'b'
+        imgUrl: ShopaholicItem,
+        title: 'Item Page ( Mobile )'
       }
     ];
   }, []);
@@ -55,7 +56,7 @@ function Shopaholic() {
         {
           //* Features
         }
-        <div className="mt-2">
+        <div className="mt-4">
           <p className="font-bold text-xl">{t('SHOPAHOLIC_FEATURES')}</p>
           <div className="mt-2">
             <ul className="font-sans">
@@ -75,7 +76,7 @@ function Shopaholic() {
         {
           //* 기술 스택
         }
-        <div className="mt-2">
+        <div className="mt-4">
           <p className="font-bold text-xl">{t('SHOPAHOLIC_TECH')}</p>
           <div className="mt-2">
             <ul className="font-sans">
@@ -92,7 +93,7 @@ function Shopaholic() {
             </ul>
           </div>
         </div>
-        <div className="mt-2">
+        <div className="mt-4">
           <p className="font-bold text-xl">Github Repository</p>
           <div className="mt-2">
             <ul>
@@ -108,7 +109,7 @@ function Shopaholic() {
             </ul>
           </div>
         </div>
-        <div className="mt-2 mb-6">
+        <div className="mt-4 mb-6">
           <p className="font-bold text-xl">{t('SHOPAHOLIC_VIDEO')}</p>
           <div className="mt-2">
             <ul className="font-sans">
