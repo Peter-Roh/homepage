@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import { openInNewTab } from '../utils/common';
 import ShopaholicMain from '../assets/shopaholic.png';
 import ShopaholicItem from '../assets/shopaholic_item.png';
+import ShopaholicReport from '../assets/shopaholic_report.png';
 import ImageBox from '../components/ImageBox';
 import { IImageArray } from '../types/types';
 
@@ -34,6 +35,10 @@ function Shopaholic() {
       {
         imgUrl: ShopaholicItem,
         title: 'Item Page ( Mobile )'
+      },
+      {
+        imgUrl: ShopaholicReport,
+        title: 'Sales Report Page'
       }
     ];
   }, []);
@@ -113,9 +118,39 @@ function Shopaholic() {
           <p className="font-bold text-xl">{t('SHOPAHOLIC_VIDEO')}</p>
           <div className="mt-2">
             <ul className="font-sans">
-              <li className="list-disc list-inside md:list-outside">a</li>
-              <li className="list-disc list-inside md:list-outside">a</li>
-              <li className="list-disc list-inside md:list-outside">a</li>
+              <li
+                className="cursor-pointer list-disc list-inside md:list-outside hover:underline"
+                role="presentation"
+                onClick={() =>
+                  openInNewTab(
+                    'https://drive.google.com/file/d/14fhw_sjWFWYAcepmiQgMAfS4nrmgOXZE/view?usp=drive_link'
+                  )
+                }
+              >
+                Passwordless - login
+              </li>
+              <li
+                className="cursor-pointer list-disc list-inside md:list-outside hover:underline"
+                role="presentation"
+                onClick={() =>
+                  openInNewTab(
+                    'https://drive.google.com/file/d/1UWJ15yH-X4MGThfoqn48k0PD1ilNooKH/view?usp=sharing'
+                  )
+                }
+              >
+                Demo video
+              </li>
+              <li
+                className="cursor-pointer list-disc list-inside md:list-outside hover:underline"
+                role="presentation"
+                onClick={() =>
+                  openInNewTab(
+                    'https://drive.google.com/file/d/1wibY015qlppihqrbqNCk_BjuiPZ2ebaz/view?usp=sharing'
+                  )
+                }
+              >
+                Live streaming
+              </li>
             </ul>
           </div>
         </div>
