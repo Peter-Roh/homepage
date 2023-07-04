@@ -82,5 +82,7 @@
     "SHOPAHOLIC_FEATURES7": "Live streaming using Cloudflare Stream",
     "SHOPAHOLIC_DESC": "Descriptions",
     "SHOPAHOLIC_DESC1": "Serverless shopping mall website designed to guarantee full-stack typesafety using tRPC.",
-    "SHOPAHOLIC_VIDEO": "Demonstration Videos"
+    "SHOPAHOLIC_VIDEO": "Demonstration Videos",
+    "SHOPAHOLIC_INFO": "Development personnel & Duration",
+    "SHOPAHOLIC_INFO2": "1 person, 4 month"
 }

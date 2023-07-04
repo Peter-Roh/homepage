@@ -82,5 +82,7 @@
     "SHOPAHOLIC_FEATURES7": "Cloudflare Stream을 이용한 live streaming 기능",
     "SHOPAHOLIC_DESC": "설명",
     "SHOPAHOLIC_DESC1": "tRPC를 사용하여 풀스택 타입 안정성을 보장하는 서버리스 쇼핑몰 홈페이지입니다.",
-    "SHOPAHOLIC_VIDEO": "시연 영상"
+    "SHOPAHOLIC_VIDEO": "시연 영상",
+    "SHOPAHOLIC_INFO": "개발 인원 및 기간",
+    "SHOPAHOLIC_INFO2": "1명, 4개월"
 }

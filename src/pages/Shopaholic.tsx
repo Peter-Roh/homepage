@@ -99,6 +99,12 @@ function Shopaholic() {
           </div>
         </div>
         <div className="mt-4">
+          <p className="font-bold text-xl">{t('SHOPAHOLIC_INFO')}</p>
+          <div className="mt-2">
+            <p>{t('SHOPAHOLIC_INFO2')}</p>
+          </div>
+        </div>
+        <div className="mt-4">
           <p className="font-bold text-xl">Github Repository</p>
           <div className="mt-2">
             <ul>
