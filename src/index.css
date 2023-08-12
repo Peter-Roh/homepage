@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-full {
+  @apply flex flex-col w-full min-h-screen;
+}
+
+.page-responsive {
+  @apply md:w-3/5 md:mx-auto;
+}
+
+.flex-x-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-y-center {
+  @apply flex flex-col justify-center items-center;
+}

@@ -1,13 +1,7 @@
-# homepage
+# Homepage
 
 ## Tech Stack
 
-language: typescript
+Language: typescript
 
-coding style: airbnb coding style guide
-
-CSS framework: tailwindcss(daisyui)
-
-libraries: react(Create React App), i18n
-
-CV: LaTeX
+Stacks: React(with vite), TailwindCSS
