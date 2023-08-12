@@ -6,8 +6,8 @@
   @apply flex flex-col w-full min-h-screen;
 }
 
-.page-responsive {
-  @apply md:w-3/5 md:mx-auto;
+.flex-y {
+  @apply flex flex-col;
 }
 
 .flex-x-center {
@@ -16,4 +16,12 @@
 
 .flex-y-center {
   @apply flex flex-col justify-center items-center;
+}
+
+.header-nav-li {
+  @apply px-8 py-4 border-x-0 border-y-0 border-l-[1px] border-l-black min-w-[8rem] flex-x-center text-center font-newsreader font-bold text-xl hover:bg-black hover:text-white cursor-pointer lowercase focus:outline-none focus:ring-2  focus:ring-rose-600;
+}
+
+.icon {
+  @apply h-6 w-6;
 }

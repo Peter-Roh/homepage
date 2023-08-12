@@ -1,12 +1,19 @@
 import { Outlet } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Layout() {
   console.log("i am layout");
   return (
     <>
-      <div>
-        <div>i am layout</div>
-        <Outlet />
+      <div className="page-full">
+        <div className="flex-y min-h-screen lg:border lg:border-black lg:mx-10 lg:my-5">
+          <Header />
+          <div className="overflow-scroll">
+            <Outlet />
+          </div>
+          <Footer />
+        </div>
       </div>
     </>
   );

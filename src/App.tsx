@@ -1,21 +1,21 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
-import Test from "./pages/Test";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/404";
 
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" index element={<Home />} />
-            <Route path="/test" element={<Test />} />
-          </Route>
-          <Route path="/*" element={<NotFound />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" index element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
     </>
   );
 }
