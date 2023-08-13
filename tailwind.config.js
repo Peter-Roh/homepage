@@ -22,6 +22,10 @@ export default {
           },
         },
       },
+      boxShadow: {
+        "button-shadow":
+          "0.2rem 0.2rem 0 0 #fff, 0.2rem 0.2rem 0 0.04rem black",
+      },
     },
   },
   plugins: [],
