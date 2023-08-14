@@ -26,6 +26,9 @@ export default {
         "button-shadow":
           "0.2rem 0.2rem 0 0 #fff, 0.2rem 0.2rem 0 0.04rem black",
       },
+      aspectRatio: {
+        "4/3": "4 / 3",
+      },
     },
   },
   plugins: [],

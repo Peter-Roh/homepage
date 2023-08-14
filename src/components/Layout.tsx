@@ -7,9 +7,9 @@ function Layout() {
   return (
     <>
       <div className="page-full">
-        <div className="flex-y min-h-screen lg:border-double lg:border-4 lg:border-black lg:mx-10 lg:my-5">
+        <div className="flex-y min-h-screen lg:border-double lg:border-4 lg:border-black lg:mx-10 lg:my-5 shadow-lg shadow-slate-400">
           <Header />
-          <div className="overflow-scroll">
+          <div>
             <Outlet />
           </div>
           <Footer />
