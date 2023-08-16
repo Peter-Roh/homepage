@@ -104,7 +104,7 @@ function Home() {
         </p>
       </div>
       <div className="flex-x-center h-60 border-b-[1px] border-b-black">
-        <p className="text-center font-newsreader text-xl font-medium leading-8 lg:w-3/5">
+        <p className="px-2 text-center font-newsreader text-xl font-medium leading-8 lg:w-3/5">
           I code, read, think, and write. I teach mathematics and do
           programming. I am into philosophy and investment. My dream is to
           become a philosopher.

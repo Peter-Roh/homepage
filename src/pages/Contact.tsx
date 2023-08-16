@@ -31,7 +31,7 @@ function Contact() {
             any reasons.
           </p>
         </div>
-        <div className="flex-y-center mx-auto mt-16 w-fit lg:w-1/3">
+        <div className="flex-y-center mx-auto mb-32 mt-16 w-fit lg:w-1/3">
           <div>
             <div className="flex items-center justify-start break-all px-1">
               <span role="img" aria-label="email" className="w-16 text-center">
