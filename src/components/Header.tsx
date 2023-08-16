@@ -57,6 +57,7 @@ function Header() {
         </div>
         <button
           className="flex-x-center h-14 w-14 border-x-0 border-y-0 border-l-[1px] border-l-black focus:outline-none focus:ring-2 focus:ring-rose-600  lg:hidden"
+          aria-label="menu"
           onClick={() => dispatch(toggleOpen())}
         >
           {
@@ -78,8 +79,8 @@ function Header() {
             />
           </svg>
         </button>
-        <nav className="hidden lg:block">
-          <ul className="flex">
+        <div className="hidden lg:block">
+          <div className="flex">
             {menus.map((menu) => {
               return (
                 <Link
@@ -91,12 +92,12 @@ function Header() {
                   }`}
                   to={menu.url}
                 >
-                  <li>{menu.name}</li>
+                  <div>{menu.name}</div>
                 </Link>
               );
             })}
-          </ul>
-        </nav>
+          </div>
+        </div>
         {useAppSelector((state: RootState) => state.modal).isOpen && <Modal />}
       </header>
     </>

@@ -121,7 +121,12 @@ function Home() {
             {badges.map((badge) => {
               return (
                 <div key={badge.name} className="inline-block">
-                  <img alt={badge.name} src={badge.url} />
+                  <img
+                    alt={badge.name}
+                    src={badge.url}
+                    height="28px"
+                    width="100%"
+                  />
                 </div>
               );
             })}
