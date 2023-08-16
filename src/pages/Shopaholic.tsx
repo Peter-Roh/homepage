@@ -55,6 +55,11 @@ function Shopaholic() {
     <>
       <Helmet>
         <title>Roh Minchul | Shopaholic</title>
+        <meta property="og:title" content="Roh Minchul | Shopaholic" />
+        <meta
+          property="og:url"
+          content="https://peter-roh.github.io/projects/shopaholic"
+        />
       </Helmet>
       <div className="mx-auto my-8 px-4 lg:w-3/5">
         <div className="mb-4 font-newsreader text-3xl font-bold">

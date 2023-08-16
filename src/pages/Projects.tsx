@@ -30,6 +30,11 @@ function Projects() {
     <>
       <Helmet>
         <title>Roh Minchul | Projects</title>
+        <meta property="og:title" content="Roh Minchul | Projects" />
+        <meta
+          property="og:url"
+          content="https://peter-roh.github.io/projects"
+        />
       </Helmet>
       <div>
         <div className="grid grid-cols-1 lg:grid-cols-3">
