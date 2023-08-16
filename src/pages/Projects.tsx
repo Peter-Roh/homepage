@@ -3,8 +3,19 @@ import Shopaholic from "../assets/shopaholic.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import type { TProject } from "../types";
+import { useAppDispatch } from "../redux/hooks";
+import { useEffect } from "react";
+import { resetModal } from "../redux/modal";
 
 function Projects() {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    return () => {
+      dispatch(resetModal());
+    };
+  }, []);
+
   const projects: TProject[] = [
     {
       date: "July, 2023",

@@ -2,8 +2,9 @@ import { Link, useLocation } from "react-router-dom";
 import type { RootState } from "../redux/store";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import { toggleOpen } from "../redux/modal";
-import Modal from "./modal";
-import { useMemo } from "react";
+import Modal from "./Modal";
+import { useEffect, useMemo, useRef } from "react";
+import autoAnimate from "@formkit/auto-animate";
 
 type menu = {
   url: string;
@@ -13,6 +14,7 @@ type menu = {
 function Header() {
   const location = useLocation();
   const dispatch = useAppDispatch();
+  const parent = useRef(null);
 
   const menus: menu[] = useMemo(
     () => [
@@ -32,9 +34,21 @@ function Header() {
     [],
   );
 
+  useEffect(() => {
+    parent.current &&
+      autoAnimate(parent.current, {
+        duration: 200,
+        easing: "ease-out",
+        disrespectUserMotionPreference: false,
+      });
+  }, [parent]);
+
   return (
     <>
-      <header className="flex items-center border-x-0 border-y-0 border-b-[1px] border-b-black lg:border-b-0">
+      <header
+        className="z-40 flex items-center border-x-0 border-y-0 border-b-[1px] border-b-black lg:border-b-0"
+        ref={parent}
+      >
         <div className="flex-grow py-3 lg:border-b-[1px] lg:border-b-black">
           <div className="ml-8 w-fit font-lobster text-2xl hover:animate-custom-bounce lg:text-3xl">
             <Link
@@ -87,8 +101,8 @@ function Header() {
             })}
           </ul>
         </nav>
+        {useAppSelector((state: RootState) => state.modal).isOpen && <Modal />}
       </header>
-      {useAppSelector((state: RootState) => state.modal).isOpen && <Modal />}
     </>
   );
 }
