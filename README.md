@@ -2,6 +2,4 @@
 
 ## Tech Stack
 
-Language: typescript
-
-Stacks: React(with vite), TailwindCSS
+React with typescript(with vite), TailwindCSS

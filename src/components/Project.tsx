@@ -1,16 +1,18 @@
-type ProjectProps = {
-  date: string;
-  title: string;
-  img: string;
-  description: string;
-};
+import type { TProject } from "../types";
 
-function Project({ date, title, img, description }: ProjectProps) {
+/**
+ * projects page에서 project 하나를 보여주는 component
+ * @param date project 종료 날짜
+ * @param title project 제목
+ * @param img project 대표 이미지
+ * @param description project에 대한 짧은 설명
+ */
+function Project({ date, title, img, description }: TProject) {
   return (
     <>
-      <div className="font-mono text-sm mb-2 ml-auto">{date}</div>
+      <div className="mb-2 ml-auto font-mono text-sm">{date}</div>
       <div>
-        <img src={img} alt="project" className="object-contain max-h-52" />
+        <img src={img} alt="project" className="max-h-52 object-contain" />
       </div>
       <div className="mt-4 text-center">
         <p className="font-newsreader text-sm">{description}</p>

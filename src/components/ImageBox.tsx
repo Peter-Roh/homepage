@@ -1,10 +1,14 @@
 import { Carousel } from "react-responsive-carousel";
-import type { Image } from "../types";
+import type { TImage } from "../types";
 
 type ImageBoxProps = {
-  images: Image[];
+  images: TImage[];
 };
 
+/**
+ * Carousel component using react-responsive-carousel
+ * @param images images you want to show
+ */
 function ImageBox({ images }: ImageBoxProps) {
   return (
     <>

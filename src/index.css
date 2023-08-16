@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .page-full {
-  @apply flex flex-col w-full min-h-screen;
+  @apply flex min-h-screen w-full flex-col;
 }
 
 .flex-y {
@@ -11,15 +11,15 @@
 }
 
 .flex-x-center {
-  @apply flex justify-center items-center;
+  @apply flex items-center justify-center;
 }
 
 .flex-y-center {
-  @apply flex flex-col justify-center items-center;
+  @apply flex flex-col items-center justify-center;
 }
 
 .header-nav-li {
-  @apply px-8 py-4 border-x-0 border-y-0 border-l-[1px] border-l-black min-w-[8rem] flex-x-center text-center font-newsreader font-bold text-xl text-slate-800 hover:bg-black hover:text-white cursor-pointer lowercase focus:outline-none focus:ring-2  focus:ring-rose-600;
+  @apply flex-x-center min-w-[8rem] cursor-pointer border-x-0 border-y-0 border-l-[1px] border-l-black px-8 py-4 text-center font-newsreader text-xl font-bold lowercase text-slate-800 hover:bg-black hover:text-white focus:outline-none focus:ring-2  focus:ring-rose-600;
 }
 
 .icon {
@@ -27,13 +27,21 @@
 }
 
 .grid-cell {
-  @apply border-dashed border-b-[1px] lg:border-l-[1px] border-b-black lg:border-l-black lg:last:border-r-[1px] last:border-b-0 lg:last:border-b-[1px] lg:last:border-r-black lg:[&:nth-child(3n+1)]:border-l-0 h-96 flex-y-center px-20;
+  @apply flex-y-center h-96 border-b-[1px] border-dashed border-b-black px-20 last:border-b-0 lg:border-l-[1px] lg:border-l-black lg:last:border-b-[1px] lg:last:border-r-[1px] lg:last:border-r-black lg:[&:nth-child(3n+1)]:border-l-0;
 }
 
 .button {
-  @apply border border-black shadow-button-shadow group-hover:shadow-none px-4 py-2 group-hover:bg-rose-500 group-hover:border-rose-500 group-hover:text-white cursor-pointer group-hover:after:content-['read_more'] w-28 text-center ease-out duration-200 focus:outline-none;
+  @apply w-28 cursor-pointer border border-black px-4 py-2 text-center shadow-button-shadow duration-200 ease-out focus:outline-none group-hover:border-rose-500 group-hover:bg-rose-500 group-hover:text-white group-hover:shadow-none group-hover:after:content-['read_more'];
 }
 
 .description-li {
-  @apply list-disc list-inside lg:list-outside;
+  @apply list-inside list-disc lg:list-outside;
+}
+
+.project-description-margin {
+  @apply mt-4;
+}
+
+.project-sm-title {
+  @apply font-newsreader text-xl font-bold;
 }

@@ -3,11 +3,10 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 function Layout() {
-  console.log("i am layout");
   return (
     <>
       <div className="page-full">
-        <div className="flex-y min-h-screen lg:border-double lg:border-4 lg:border-black lg:mx-10 lg:my-5 shadow-lg shadow-slate-400">
+        <div className="flex-y min-h-screen shadow-lg shadow-slate-400 lg:mx-10 lg:my-5 lg:border-4 lg:border-double lg:border-black">
           <Header />
           <div>
             <Outlet />

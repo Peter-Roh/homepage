@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
 function Contact() {
-  console.log("i am contact");
   return (
     <>
       <Helmet>

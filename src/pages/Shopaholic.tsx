@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { Helmet } from "react-helmet-async";
 import ImageBox from "../components/ImageBox";
-import type { Image } from "../types";
+import type { TImage } from "../types";
 import ShopaholicMain from "../assets/shopaholic.png";
 import ShopaholicItem from "../assets/shopaholic_item.png";
 import ShopaholicReport from "../assets/shopaholic_report.png";
@@ -19,10 +19,12 @@ function Shopaholic() {
       "Live streaming using Cloudflare Stream",
     ];
   }, []);
+
   const techStack = useMemo(() => {
     return ["NextJS", "TailwindCSS", "Prisma", "tRPC"];
   }, []);
-  const images: Image[] = useMemo(() => {
+
+  const images: TImage[] = useMemo(() => {
     return [
       {
         imgUrl: ShopaholicMain,
@@ -44,13 +46,16 @@ function Shopaholic() {
       <Helmet>
         <title>Roh Minchul | Shopaholic</title>
       </Helmet>
-      <div className="lg:w-3/5 mx-auto my-8 px-4">
-        <div className="font-newsreader font-bold text-3xl mb-4">
+      <div className="mx-auto my-8 px-4 lg:w-3/5">
+        <div className="mb-4 font-newsreader text-3xl font-bold">
           <p>Shopaholic</p>
         </div>
         <ImageBox images={images} />
-        <div className="mt-4">
-          <p className="font-newsreader font-bold text-xl">Description</p>
+        {
+          //* Description
+        }
+        <div className="project-description-margin">
+          <p className="project-sm-title">Description</p>
           <div className="mt-2 font-newsreader">
             Serverless shopping mall website designed to guarantee full-stack
             typesafety using tRPC.
@@ -59,8 +64,8 @@ function Shopaholic() {
         {
           //* Features
         }
-        <div className="mt-4">
-          <p className="font-newsreader font-bold text-xl">Features</p>
+        <div className="project-description-margin">
+          <p className="project-sm-title">Features</p>
           <div className="mt-2 font-newsreader">
             <ul>
               {features.map((elt) => {
@@ -76,8 +81,8 @@ function Shopaholic() {
         {
           //* Tech Stack
         }
-        <div className="mt-4">
-          <p className="font-newsreader font-bold text-xl">Tech Stack</p>
+        <div className="project-description-margin">
+          <p className="project-sm-title">Tech Stack</p>
           <div className="mt-2 font-newsreader">
             <ul>
               {techStack.map((elt) => {
@@ -90,16 +95,20 @@ function Shopaholic() {
             </ul>
           </div>
         </div>
-        <div className="mt-4">
-          <p className="font-newsreader font-bold text-xl">
-            Development personnel & Duration
-          </p>
+        {
+          //* Development personnel & Duration
+        }
+        <div className="project-description-margin">
+          <p className="project-sm-title">Development personnel & Duration</p>
           <div className="mt-2 font-newsreader">1 person, 4 month</div>
         </div>
-        <div className="mt-4">
-          <p className="font-newsreader font-bold text-xl">Github Repository</p>
-          <div className="mt-2">
-            <ul className="font-newsreader">
+        {
+          //* Github Repository
+        }
+        <div className="project-description-margin">
+          <p className="project-sm-title">Github Repository</p>
+          <div className="mt-2 font-newsreader">
+            <ul>
               <li
                 className="description-li cursor-pointer hover:underline"
                 onClick={() =>
@@ -111,17 +120,18 @@ function Shopaholic() {
             </ul>
           </div>
         </div>
-        <div className="mt-4">
-          <p className="font-newsreader font-bold text-xl">
-            Demonstration Videos
-          </p>
+        {
+          //* Demonstration Videos
+        }
+        <div className="project-description-margin">
+          <p className="project-sm-title">Demonstration Videos</p>
           <div className="mt-2 font-newsreader">
             <ul>
               <li
                 className="description-li cursor-pointer hover:underline"
                 onClick={() =>
                   openInNewTab(
-                    "https://drive.google.com/file/d/14fhw_sjWFWYAcepmiQgMAfS4nrmgOXZE/view?usp=drive_link"
+                    "https://drive.google.com/file/d/14fhw_sjWFWYAcepmiQgMAfS4nrmgOXZE/view?usp=drive_link",
                   )
                 }
               >
@@ -131,7 +141,7 @@ function Shopaholic() {
                 className="description-li cursor-pointer hover:underline"
                 onClick={() =>
                   openInNewTab(
-                    "https://drive.google.com/file/d/1UWJ15yH-X4MGThfoqn48k0PD1ilNooKH/view?usp=sharing"
+                    "https://drive.google.com/file/d/1UWJ15yH-X4MGThfoqn48k0PD1ilNooKH/view?usp=sharing",
                   )
                 }
               >
@@ -141,7 +151,7 @@ function Shopaholic() {
                 className="description-li cursor-pointer hover:underline"
                 onClick={() =>
                   openInNewTab(
-                    "https://drive.google.com/file/d/1wibY015qlppihqrbqNCk_BjuiPZ2ebaz/view?usp=sharing"
+                    "https://drive.google.com/file/d/1wibY015qlppihqrbqNCk_BjuiPZ2ebaz/view?usp=sharing",
                   )
                 }
               >
