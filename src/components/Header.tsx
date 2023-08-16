@@ -19,10 +19,6 @@ function Header() {
   const menus: menu[] = useMemo(
     () => [
       {
-        name: "Info",
-        url: "/info",
-      },
-      {
         name: "Projects",
         url: "/projects",
       },
