@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import type { RootState } from "../redux/store";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
-import { toggleOpen } from "../redux/modal";
+import { resetModal, toggleOpen } from "../redux/modal";
 import Modal from "./Modal";
 import { useEffect, useMemo, useRef } from "react";
 import autoAnimate from "@formkit/auto-animate";
@@ -15,6 +15,8 @@ function Header() {
   const location = useLocation();
   const dispatch = useAppDispatch();
   const parent = useRef(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const isOpen = useAppSelector((state: RootState) => state.modal).isOpen;
 
   const menus: menu[] = useMemo(
     () => [
@@ -39,6 +41,12 @@ function Header() {
       });
   }, [parent]);
 
+  useEffect(() => {
+    if (isOpen) {
+      dispatch(resetModal());
+    }
+  }, [location]);
+
   return (
     <>
       <header
@@ -59,6 +67,7 @@ function Header() {
           className="flex-x-center h-14 w-14 border-x-0 border-y-0 border-l-[1px] border-l-black focus:outline-none focus:ring-2 focus:ring-rose-600  lg:hidden"
           aria-label="menu"
           onClick={() => dispatch(toggleOpen())}
+          ref={buttonRef}
         >
           {
             // * hamburger
@@ -98,7 +107,9 @@ function Header() {
             })}
           </div>
         </div>
-        {useAppSelector((state: RootState) => state.modal).isOpen && <Modal />}
+        {useAppSelector((state: RootState) => state.modal).isOpen && (
+          <Modal buttonRef={buttonRef} />
+        )}
       </header>
     </>
   );

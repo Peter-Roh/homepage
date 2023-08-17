@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import { Helmet } from "react-helmet-async";
 import ImageBox from "../components/ImageBox";
 import type { TImage } from "../types";
@@ -6,18 +6,8 @@ import ShopaholicMain from "../assets/shopaholic.png";
 import ShopaholicItem from "../assets/shopaholic_item.png";
 import ShopaholicReport from "../assets/shopaholic_report.png";
 import { openInNewTab } from "../utils/common";
-import { useAppDispatch } from "../redux/hooks";
-import { resetModal } from "../redux/modal";
 
 function Shopaholic() {
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    return () => {
-      dispatch(resetModal());
-    };
-  }, []);
-
   const features = useMemo(() => {
     return [
       "Responsive Design",
@@ -55,11 +45,6 @@ function Shopaholic() {
     <>
       <Helmet>
         <title>Roh Minchul | Shopaholic</title>
-        <meta property="og:title" content="Roh Minchul | Shopaholic" />
-        <meta
-          property="og:url"
-          content="https://peter-roh.github.io/projects/shopaholic"
-        />
       </Helmet>
       <div className="mx-auto my-8 px-4 lg:w-3/5">
         <div className="mb-4 font-newsreader text-3xl font-bold">

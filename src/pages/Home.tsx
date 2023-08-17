@@ -1,7 +1,4 @@
-import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { resetModal } from "../redux/modal";
-import { useAppDispatch } from "../redux/hooks";
 
 type badge = {
   name: string;
@@ -9,7 +6,6 @@ type badge = {
 };
 
 function Home() {
-  const dispatch = useAppDispatch();
   const badges: badge[] = [
     {
       name: "HTML5",
@@ -85,18 +81,10 @@ function Home() {
     },
   ];
 
-  useEffect(() => {
-    return () => {
-      dispatch(resetModal());
-    };
-  }, []);
-
   return (
     <>
       <Helmet>
         <title>Roh Minchul | Home</title>
-        <meta property="og:title" content="Roh Minchul | Home" />
-        <meta property="og:url" content="https://peter-roh.github.io" />
       </Helmet>
       <div className="flex-x-center h-80 border-b-[1px] border-dotted border-b-black">
         <p className="text-center font-newsreader text-3xl font-medium leading-10 lg:w-1/3">

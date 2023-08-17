@@ -1,25 +1,12 @@
 import { Helmet } from "react-helmet-async";
-import { useAppDispatch } from "../redux/hooks";
-import { useEffect } from "react";
-import { resetModal } from "../redux/modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    return () => {
-      dispatch(resetModal());
-    };
-  }, []);
-
   return (
     <>
       <Helmet>
         <title>Roh Minchul | Contact</title>
-        <meta property="og:title" content="Roh Minchul | Contact" />
-        <meta property="og:url" content="https://peter-roh.github.io/contact" />
       </Helmet>
       <div>
         <div className="flex-x-center mt-32">
