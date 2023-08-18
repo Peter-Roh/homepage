@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import type { RootState } from "../redux/store";
-import { useAppDispatch, useAppSelector } from "../redux/hooks";
-import { resetModal, toggleOpen } from "../redux/modal";
+import { useAppDispatch } from "../redux/hooks";
+import { toggleOpen } from "../redux/modal";
 import Modal from "./Modal";
 import { useEffect, useMemo, useRef } from "react";
 import autoAnimate from "@formkit/auto-animate";
@@ -16,7 +15,6 @@ function Header() {
   const dispatch = useAppDispatch();
   const parent = useRef(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const isOpen = useAppSelector((state: RootState) => state.modal).isOpen;
 
   const menus: menu[] = useMemo(
     () => [
@@ -40,12 +38,6 @@ function Header() {
         disrespectUserMotionPreference: false,
       });
   }, [parent]);
-
-  useEffect(() => {
-    if (isOpen) {
-      dispatch(resetModal());
-    }
-  }, [location]);
 
   return (
     <>
@@ -107,9 +99,7 @@ function Header() {
             })}
           </div>
         </div>
-        {useAppSelector((state: RootState) => state.modal).isOpen && (
-          <Modal buttonRef={buttonRef} />
-        )}
+        <Modal buttonRef={buttonRef} />
       </header>
     </>
   );

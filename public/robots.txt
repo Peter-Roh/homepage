@@ -3,5 +3,8 @@ Disallow: /*.gif$
 Disallow: /*.jpg$
 Disallow: /*.png$
 
+User-agent: GPTBot
+Disallow: /
+
 User-agent: *
 Allow: /

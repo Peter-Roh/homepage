@@ -1,13 +1,16 @@
 import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
-import { useAppDispatch } from "../redux/hooks";
+import { Link, useLocation } from "react-router-dom";
+import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import { resetModal } from "../redux/modal";
+import type { RootState } from "../redux/store";
 
 type ModalProps = {
   buttonRef: React.RefObject<HTMLButtonElement>;
 };
 
 function Modal({ buttonRef }: ModalProps) {
+  const location = useLocation();
+  const isOpen = useAppSelector((state: RootState) => state.modal).isOpen;
   const modalRef = useRef<HTMLDivElement>(null);
   const dispatch = useAppDispatch();
 
@@ -19,7 +22,7 @@ function Modal({ buttonRef }: ModalProps) {
           !buttonRef.current.contains(target) &&
           !modalRef.current.contains(target);
 
-        if (isOutside) {
+        if (isOpen && isOutside) {
           dispatch(resetModal());
         }
       }
@@ -29,12 +32,20 @@ function Modal({ buttonRef }: ModalProps) {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [modalRef, buttonRef]);
+  }, [modalRef, buttonRef, isOpen]);
+
+  useEffect(() => {
+    if (isOpen) {
+      dispatch(resetModal());
+    }
+  }, [location]);
 
   return (
     <>
       <div
-        className="dropdown-content absolute right-0 top-[3.55rem] z-10 w-full lg:hidden"
+        className={`dropdown-content absolute right-0 top-[3.55rem] z-10 w-full lg:hidden ${
+          isOpen ? "block" : "hidden"
+        }`}
         ref={modalRef}
       >
         <Link to="/projects">
