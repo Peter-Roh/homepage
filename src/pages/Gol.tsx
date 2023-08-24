@@ -99,7 +99,7 @@ function Gol() {
           <div className="mt-2 font-newsreader">
             <ul>
               <li
-                className="description-li cursor-pointer hover:underline"
+                className="description-li cursor-pointer break-all hover:underline"
                 onClick={() =>
                   openInNewTab(
                     "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life",
