@@ -26,12 +26,16 @@
   @apply h-6 w-6;
 }
 
+.grid-border {
+  @apply border-b-[1px] border-dashed border-b-black last:border-b-0 lg:border-l-[1px] lg:border-l-black lg:last:border-b-[1px] lg:last:border-r-[1px] lg:last:border-r-black [&:not(:last-child)]:border-b-[1px] [&:nth-child(3n)]:border-r-0 lg:[&:nth-child(3n+1)]:border-l-0;
+}
+
 .grid-cell {
-  @apply flex-y-center h-96 border-b-[1px] border-dashed border-b-black px-20 last:border-b-0 lg:border-l-[1px] lg:border-l-black lg:last:border-b-[1px] lg:last:border-r-[1px] lg:last:border-r-black lg:[&:nth-child(3n+1)]:border-l-0;
+  @apply flex-y-center h-96 px-20;
 }
 
 .button {
-  @apply w-28 cursor-pointer border border-black px-4 py-2 text-center shadow-button-shadow duration-200 ease-out focus:outline-none group-hover:border-rose-500 group-hover:bg-rose-500 group-hover:text-white group-hover:shadow-none group-hover:after:content-['read_more'];
+  @apply w-fit cursor-pointer border border-black px-4 py-2 text-center shadow-button-shadow duration-200 ease-out focus:outline-none group-hover:border-rose-500 group-hover:bg-rose-500 group-hover:text-white group-hover:shadow-none group-hover:after:content-['read_more'];
 }
 
 .description-li {

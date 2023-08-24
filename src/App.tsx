@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Shopaholic from "./pages/Shopaholic";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/404";
+import Gol from "./pages/Gol";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" index element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/shopaholic" element={<Shopaholic />} />
+          <Route path="/projects/game-of-life" element={<Gol />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
         <Route path="/*" element={<NotFound />} />

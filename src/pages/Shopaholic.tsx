@@ -21,7 +21,7 @@ function Shopaholic() {
   }, []);
 
   const techStack = useMemo(() => {
-    return ["NextJS", "TailwindCSS", "Prisma", "tRPC"];
+    return ["Typescript", "NextJS", "TailwindCSS", "Prisma", "tRPC"];
   }, []);
 
   const images: TImage[] = useMemo(() => {
