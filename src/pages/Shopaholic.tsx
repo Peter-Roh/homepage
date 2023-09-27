@@ -12,7 +12,7 @@ function Shopaholic() {
     return [
       "Responsive Design",
       "CRUD operations with tRPC and Prisma",
-      "Full-stack typesafety",
+      "Full-stack type safety",
       "Passwordless - login",
       "Rate limiting using upstash",
       "Store and optimize images using Cloudflare Images",
@@ -58,7 +58,7 @@ function Shopaholic() {
           <p className="project-sm-title">Description</p>
           <div className="mt-2 font-newsreader">
             Serverless shopping mall website designed to guarantee full-stack
-            typesafety using tRPC.
+            type safety using tRPC.
           </div>
         </div>
         {

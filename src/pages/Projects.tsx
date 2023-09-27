@@ -20,7 +20,7 @@ function Projects() {
       img: Shopaholic,
       title: "Shopaholic",
       description:
-        "Serverless shopping mall website designed to guarantee full-stack typesafety using tRPC.",
+        "Serverless shopping mall website designed to guarantee full-stack type safety using tRPC.",
     },
   ];
 
