@@ -72,10 +72,6 @@ function Home() {
       url: "https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?&style=for-the-badge&logo=visual-studio-code&logoColor=white",
     },
     {
-      name: "LaTeX",
-      url: "https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white",
-    },
-    {
       name: "MacOS",
       url: "https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0",
     },
@@ -87,17 +83,16 @@ function Home() {
         <title>Roh Minchul | Home</title>
       </Helmet>
       <div className="flex-x-center h-80 border-b-[1px] border-dotted border-b-black">
-        <p className="text-center font-newsreader text-3xl font-medium leading-10 lg:w-1/3">
-          Hello, I am
-          <span className="font-bold text-cyan-500"> Roh Minchul</span>, a
-          freelancer developer and mathematics teacher.
+        <p className="text-balance text-center font-newsreader text-3xl font-medium leading-10 lg:w-1/2">
+          Hello, I am{" "}
+          <span className="font-bold text-cyan-500">Roh Minchul</span>, a
+          freelancer developer.
         </p>
       </div>
-      <div className="flex-x-center h-60 border-b-[1px] border-b-black">
+      <div className="flex-x-center text-balance h-60 border-b-[1px] border-b-black">
         <p className="px-2 text-center font-newsreader text-xl font-medium leading-8 lg:w-3/5">
-          I code, read, think, and write. I teach mathematics and do
-          programming. I am into philosophy and investment. My dream is to
-          become a philosopher.
+          I code, read, think, and write. I am into philosophy and investment.
+          My dream is to become a philosopher.
         </p>
       </div>
       <div className="flex-y-center px-10 py-16 lg:h-60 lg:px-28">

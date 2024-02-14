@@ -1,4 +1,5 @@
 import Project from "../components/Project";
+import SubwayKiosk from "../assets/kiosk.png";
 import Shopaholic from "../assets/shopaholic.png";
 import GOL from "../assets/game-of-life.png";
 import { Link } from "react-router-dom";
@@ -21,6 +22,13 @@ function Projects() {
       title: "Shopaholic",
       description:
         "Serverless shopping mall website designed to guarantee full-stack type safety using tRPC.",
+    },
+    {
+      link: "/projects/subway",
+      date: "July, 2022",
+      img: SubwayKiosk,
+      title: "Subway KIOSK",
+      description: "Subway KIOSK program",
     },
   ];
 
