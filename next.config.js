@@ -3,6 +3,9 @@ const config = {
   reactStrictMode: true,
   swcMinify: true,
   transpilePackages: ["geist"],
+  output: "export",
+  assetPrefix:
+    process.env.NODE_ENV === "production" ? "https://peter-roh.github.io" : "",
 
   compiler: {
     removeConsole: {
@@ -12,16 +15,6 @@ const config = {
         // "log",
       ],
     },
-  },
-
-  /**
-   * If you are using `appDir` then you must comment the below `i18n` config out.
-   *
-   * @see https://github.com/vercel/next.js/issues/41980
-   */
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
   },
 };
 
