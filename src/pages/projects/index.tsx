@@ -1,0 +1,47 @@
+import Head from "next/head";
+
+import { ChevronLeftIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
+
+export default function Projects() {
+  const projects = [
+    {
+      title: "Game of Life",
+      description: "Conway's game of life simulator",
+      link: "/projects/game-of-life",
+    },
+    {
+      title: "Shopaholic",
+      description:
+        "Serverless shopping mall website designed to guarantee full-stack type safety using tRPC.",
+      link: "/projects/shopaholic",
+    },
+    {
+      title: "Subway KIOSK",
+      description: "Subway KIOSK program",
+      link: "/projects/subway",
+    },
+  ];
+
+  return (
+    <>
+      <Head>
+        <title>Projects | Roh Minchul</title>
+      </Head>
+      <div className="page">
+        <div className="grid grid-cols-3">
+          <Link href="/">
+            <div className="text-sub flex cursor-pointer items-center">
+              <ChevronLeftIcon />
+              <span className="ml-1">Go back</span>
+            </div>
+          </Link>
+          <div className="mx-auto text-lg font-semibold">Projects</div>
+          <div />
+        </div>
+        <HoverEffect items={projects} />
+      </div>
+    </>
+  );
+}
