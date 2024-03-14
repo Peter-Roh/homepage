@@ -61,7 +61,7 @@ export default function Home() {
             <div className="mt-4">
               <button
                 onClick={() => router.push("/projects")}
-                className="animate-shimmer inline-flex items-center justify-center rounded-md border border-lime-500 bg-[linear-gradient(110deg,#a3e635,45%,#d9f99d,55%,#a3e635)] bg-[length:200%_100%] px-3 py-2 text-sm font-medium text-gray-500 transition-colors focus:outline-none focus:ring-1 focus:ring-lime-500"
+                className="inline-flex animate-shimmer items-center justify-center rounded-md border border-lime-500 bg-[linear-gradient(110deg,#a3e635,45%,#d9f99d,55%,#a3e635)] bg-[length:200%_100%] px-3 py-2 text-sm font-medium text-gray-500 transition-colors focus:outline-none focus:ring-1 focus:ring-lime-500"
               >
                 <ArchiveIcon className="mr-1" />
                 Projects

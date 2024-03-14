@@ -71,7 +71,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground relative overflow-hidden;
+    @apply relative overflow-hidden bg-background text-foreground;
   }
 }
 
@@ -88,7 +88,7 @@
 }
 
 .page {
-  @apply mx-auto h-screen w-full max-w-7xl overflow-scroll px-8 py-16 selection:bg-lime-950 selection:text-lime-400;
+  @apply scrollbar-hide mx-auto h-screen w-full max-w-7xl overflow-scroll px-8 py-16 selection:bg-lime-950 selection:text-lime-400;
 }
 
 .text-sub {
@@ -97,4 +97,20 @@
 
 .text-title {
   @apply text-base font-semibold text-gray-500;
+}
+
+.project-section {
+  @apply mt-4;
+}
+
+.project-title {
+  @apply mt-2 text-lg font-semibold text-gray-500;
+}
+
+.project-ul {
+  @apply list-inside list-disc font-sans marker:text-lime-500;
+}
+
+.project-li-link {
+  @apply cursor-pointer truncate decoration-lime-500 hover:underline;
 }

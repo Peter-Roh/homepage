@@ -8,17 +8,20 @@ export default function Projects() {
   const projects = [
     {
       title: "Game of Life",
+      date: "August, 2023",
       description: "Conway's game of life simulator",
       link: "/projects/game-of-life",
     },
     {
       title: "Shopaholic",
+      date: "July, 2023",
       description:
         "Serverless shopping mall website designed to guarantee full-stack type safety using tRPC.",
       link: "/projects/shopaholic",
     },
     {
       title: "Subway KIOSK",
+      date: "July, 2022",
       description: "Subway KIOSK program",
       link: "/projects/subway",
     },

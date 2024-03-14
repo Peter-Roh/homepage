@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "next build",
+    "build": "next build && touch ./out/.nojekyll",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
@@ -17,6 +17,7 @@
     "clsx": "^2.1.0",
     "cssnano": "^6.1.0",
     "cssnano-preset-advanced": "^6.1.0",
+    "embla-carousel-react": "^8.0.0",
     "framer-motion": "^11.0.8",
     "geist": "^1.2.2",
     "mini-svg-data-uri": "^1.4.4",
@@ -24,6 +25,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwind-merge": "^2.2.1",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"
   },

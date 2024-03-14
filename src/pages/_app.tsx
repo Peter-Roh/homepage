@@ -36,7 +36,7 @@ const MyApp: AppType = ({
       <main
         className={`dark ${GeistSans.variable} ${GeistMono.variable} flex-y max-h-screen min-h-screen w-full cursor-crosshair overflow-hidden font-sans antialiased`}
       >
-        <div className="dark:bg-grid-lime-500/[0.2] bg-grid-lime-600 flex-y relative min-h-screen w-full bg-white text-white dark:bg-black">
+        <div className="flex-y relative min-h-screen w-full bg-white text-white bg-grid-lime-600 dark:bg-black dark:bg-grid-lime-500/[0.2]">
           <AnimatePresence key={router.route} mode="wait">
             <motion.div
               initial={{ x: "100%" }}

@@ -9,6 +9,7 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
+    date: string;
     description: string;
     link: string;
   }[];
@@ -49,7 +50,10 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+            <div className="flex items-center justify-between">
+              <CardTitle>{item.title}</CardTitle>
+              <CardDate>{item.date}</CardDate>
+            </div>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </Link>
@@ -89,6 +93,24 @@ export const CardTitle = ({
     <h4 className={cn("mt-4 font-bold tracking-wide text-zinc-100", className)}>
       {children}
     </h4>
+  );
+};
+export const CardDate = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <div
+      className={cn(
+        "text-zinc-400, mt-4 font-mono text-sm font-light italic tracking-wide",
+        className,
+      )}
+    >
+      {children}
+    </div>
   );
 };
 export const CardDescription = ({

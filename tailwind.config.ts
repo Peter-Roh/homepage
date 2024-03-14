@@ -91,10 +91,14 @@ const config = {
         sans: ["var(--font-geist-sans)"],
         mono: ["var(--font-geist-mono)"],
       },
+      aspectRatio: {
+        "4/3": "4 / 3",
+      },
     },
   },
   plugins: [
     require("tailwindcss-animate"),
+    require("tailwind-scrollbar-hide"),
     addVariablesForColors,
     function ({
       matchUtilities,
