@@ -63,7 +63,7 @@ export default function GoL() {
           // * Website Link
         }
         <div className="project-section">
-          <p className="project-title">Tech Stack</p>
+          <p className="project-title">Website Link</p>
           <div className="mt-2 font-medium">
             <ul className="project-ul">
               <li
