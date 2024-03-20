@@ -1,5 +1,10 @@
 {
   "name": "homepage",
+  "author": {
+    "name": "Peter-Roh",
+    "email": "minchul.roh.peter@gmail.com",
+    "url": "https://peter-roh.github.io/"
+  },
   "version": "2.0.0",
   "private": true,
   "type": "module",
