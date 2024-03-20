@@ -4,8 +4,22 @@ import { ChevronLeftIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
+type TProject = {
+  title: string;
+  date: string;
+  description: string;
+  link: string;
+};
+
 export default function Projects() {
-  const projects = [
+  const projects: TProject[] = [
+    {
+      title: "Excel Analyzer",
+      date: "March, 2024",
+      description:
+        "Drag and drop your excel file and ask ai about the data. AI data analyst will answer your question.",
+      link: "/projects/excel-analyzer",
+    },
     {
       title: "Game of Life",
       date: "August, 2023",
