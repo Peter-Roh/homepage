@@ -109,7 +109,7 @@ export default function Home() {
                     skilled in clear and effective communication, complemented
                     by active listening to truly understand others, enhancing
                     decision-making and ensuring mission objectives are achieved
-                    efficiently
+                    efficiently and effectively
                   </li>
                 </ul>
               </div>

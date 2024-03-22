@@ -92,10 +92,10 @@ export default function ExcelAnalyzer() {
           </div>
         </div>
         {
-          // * Demonstration Videos
+          // * Demonstration Video
         }
         <div className="project-section">
-          <p className="project-title">Demonstration Videos</p>
+          <p className="project-title">Demonstration Video</p>
           <div className="mt-2 font-medium">
             <ul className="project-ul">
               <li

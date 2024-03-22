@@ -96,10 +96,10 @@ export default function GoL() {
           </div>
         </div>
         {
-          // * References
+          // * Reference
         }
         <div className="project-section">
-          <p className="project-title">References</p>
+          <p className="project-title">Reference</p>
           <div className="mt-2 font-medium">
             <ul className="project-ul">
               <li
