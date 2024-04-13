@@ -103,12 +103,12 @@ export default function Home() {
                   <li>
                     resilience and adaptability in the face of challenges,
                     drawing from hands-on startup and project experiences that
-                    ranged from failures to successes
+                    have ranged from failures to successes
                   </li>
                   <li>
                     skilled in clear and effective communication, complemented
-                    by active listening to truly understand others, enhancing
-                    decision-making and ensuring mission objectives are achieved
+                    by active listening to truly understand others, enhance
+                    decision-making, and ensure mission objectives are achieved
                     efficiently and effectively
                   </li>
                 </ul>

@@ -12,7 +12,7 @@ export default function GoL() {
       description: "Game of Life simulator - Pulsar pattern",
     },
   ];
-  const techStack = ["Typescript", "Vite", "React", "Tailwind CSS"];
+  const techStack = ["Typescript", "React", "Tailwind CSS"];
 
   return (
     <>
