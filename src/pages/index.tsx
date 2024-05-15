@@ -50,7 +50,7 @@ export default function Home() {
                 Working with startup{" "}
                 <span className="bg-lime-600 text-gray-100">tenacities</span>.
                 Interested in learning{" "}
-                <span className="font-semibold text-[#EF4902]">Rust</span>.
+                <span className="font-semibold text-[#F7A41D]">Zig</span>.
               </div>
             </div>
             {
