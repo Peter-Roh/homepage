@@ -129,7 +129,7 @@ export default function Home() {
               <div className="mt-2">
                 <ul className="list-inside list-disc font-sans marker:text-lime-500">
                   <li>
-                    Three of my favorite things on the internet are{" "}
+                    My favorite things on the internet are{" "}
                     <a
                       href="https://obsidian.md/"
                       target="_blank"
@@ -137,21 +137,13 @@ export default function Home() {
                     >
                       Obsidian
                     </a>
-                    ,{" "}
+                    <span> and </span>
                     <a
                       href="https://plato.stanford.edu/"
                       target="_blank"
                       className="font-semibold text-[#8B1515] focus:outline-none focus:ring-1 focus:ring-[#8B1515]"
                     >
                       Stanford Encyclopedia of Philosophy
-                    </a>
-                    , and{" "}
-                    <a
-                      href="https://www.youtube.com/"
-                      target="_blank"
-                      className="font-semibold text-[#FF0000] focus:outline-none focus:ring-1 focus:ring-[#FF0000]"
-                    >
-                      YouTube
                     </a>
                     .
                   </li>
