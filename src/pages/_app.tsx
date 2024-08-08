@@ -32,6 +32,7 @@ const MyApp: AppType = ({
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google" content="notranslate" />
       </Head>
       <main
         className={`dark ${GeistSans.variable} ${GeistMono.variable} flex-y max-h-screen min-h-screen w-full cursor-crosshair overflow-hidden font-sans antialiased`}

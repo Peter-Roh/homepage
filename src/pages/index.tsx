@@ -16,7 +16,7 @@ export default function Home() {
         <div className="flex min-h-full flex-col lg:flex-row">
           <div className="lg:flex-8 mb-5 lg:mb-0 lg:flex-1">
             {
-              // * 이름, 직업 및 소개
+              // * 소개
             }
             <div>
               <h1 className="flex items-center">
@@ -25,16 +25,8 @@ export default function Home() {
               </h1>
               <div className="text-sub">Software Engineer</div>
               <div className="mt-4 text-base">
-                A developer profoundly committed to{" "}
-                <span className="text-amber-300">entrepreneurship</span>.
-                Passionate about enhancing{" "}
-                <span className="text-amber-300">user experience</span> and
-                fostering{" "}
-                <span className="text-amber-300">
-                  sustainable coding practices
-                </span>
-                , striving to create intuitive and impactful digital solutions.
-                Interested in many things including{" "}
+                developer, investor, reader, thinker... Interested in many
+                things including{" "}
                 <span className="text-orange-500">philosophy</span> and{" "}
                 <span className="text-orange-500">investment</span>. Eager to
                 explore collaborative opportunities where we can push boundaries
@@ -50,7 +42,14 @@ export default function Home() {
                 Working with startup{" "}
                 <span className="bg-lime-600 text-gray-100">tenacities</span>.
                 Interested in learning{" "}
-                <span className="font-semibold text-[#F7A41D]">Zig</span>.
+                <a
+                  href="https://ziglang.org/"
+                  target="_blank"
+                  className="font-semibold text-[#F7A41D] focus:outline-none focus:ring-1 focus:ring-[#F7A41D]"
+                >
+                  Zig
+                </a>
+                .
               </div>
             </div>
             {
