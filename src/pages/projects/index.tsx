@@ -14,13 +14,6 @@ type TProject = {
 export default function Projects() {
   const projects: TProject[] = [
     {
-      title: "Excel Analyzer",
-      date: "March, 2024",
-      description:
-        "Drag and drop your excel file and ask ai about the data. AI data analyst will answer your question.",
-      link: "/projects/excel-analyzer",
-    },
-    {
       title: "Game of Life",
       date: "August, 2023",
       description: "Conway's game of life simulator",

@@ -38,6 +38,19 @@ export default function Sides() {
           </button>
           <OpenInNewWindowIcon className="ml-1 opacity-0 lg:group-hover:opacity-100" />
         </div>
+        <div className="text-sub flex-x-center group cursor-pointer hover:text-lime-400">
+          <button
+            onClick={() =>
+              openInNewTab(
+                "https://drive.google.com/file/d/1nBuWmxfUwJS62bvYS8Rd4uILtUo8OZQi/view?usp=drive_link",
+              )
+            }
+            className="focus:outline-none focus:ring-1 focus:ring-lime-500"
+          >
+            CV
+          </button>
+          <OpenInNewWindowIcon className="ml-1 opacity-0 lg:group-hover:opacity-100" />
+        </div>
       </div>
     </aside>
   );

@@ -28,28 +28,22 @@ export default function Home() {
                 developer, investor, reader, thinker... Interested in many
                 things including{" "}
                 <span className="text-orange-500">philosophy</span> and{" "}
-                <span className="text-orange-500">investment</span>. Eager to
-                explore collaborative opportunities where we can push boundaries
-                together.
+                <span className="text-orange-500">investment</span>.
               </div>
             </div>
-            {
-              // * 현재 상황
-            }
             <div className="mt-8">
-              <h1 className="text-title">Currently</h1>
+              <h1 className="text-title">Major Achievements</h1>
               <div className="mt-2">
-                Working with startup{" "}
-                <span className="bg-lime-600 text-gray-100">tenacities</span>.
-                Interested in learning{" "}
-                <a
-                  href="https://ziglang.org/"
-                  target="_blank"
-                  className="font-semibold text-[#F7A41D] focus:outline-none focus:ring-1 focus:ring-[#F7A41D]"
-                >
-                  Zig
-                </a>
-                .
+                <ul className="list-inside list-disc font-sans marker:text-lime-500">
+                  <li>
+                    Created a service generating approximately 28 million KRW in
+                    monthly revenue with 4 regular workers.
+                  </li>
+                  <li>
+                    Have a experience of developing and maintaining Subway KIOSK
+                    program.
+                  </li>
+                </ul>
               </div>
             </div>
             {
@@ -64,6 +58,7 @@ export default function Home() {
                   <li>Tailwind CSS</li>
                   <li>JavaScript</li>
                   <li>TypeScript</li>
+                  <li>Go</li>
                   <li>Zod</li>
                   <li>React</li>
                   <li>Redux</li>
@@ -86,32 +81,6 @@ export default function Home() {
                 <ArchiveIcon className="mr-1" />
                 Projects
               </button>
-            </div>
-            {
-              // * 장점
-            }
-            <div className="mt-4">
-              <h1 className="text-title">Strengths</h1>
-              <div className="mt-2">
-                <ul className="list-inside list-disc font-sans marker:text-lime-500">
-                  <li>analytical thinking</li>
-                  <li>
-                    learning from experiences and failures, as well as from
-                    those who excel in their fields
-                  </li>
-                  <li>
-                    resilience and adaptability in the face of challenges,
-                    drawing from hands-on startup and project experiences that
-                    have ranged from failures to successes
-                  </li>
-                  <li>
-                    skilled in clear and effective communication, complemented
-                    by active listening to truly understand others, enhance
-                    decision-making, and ensure mission objectives are achieved
-                    efficiently and effectively
-                  </li>
-                </ul>
-              </div>
             </div>
             {
               // * 언어 능력

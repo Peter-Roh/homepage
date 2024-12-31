@@ -8,6 +8,8 @@
 
 - [Framer Motion](https://www.framer.com/motion)
 
+- LaTeX(CV)
+
 ## reference
 
 - https://ui.aceternity.com/
