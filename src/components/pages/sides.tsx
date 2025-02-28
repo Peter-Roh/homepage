@@ -42,7 +42,7 @@ export default function Sides() {
           <button
             onClick={() =>
               openInNewTab(
-                "https://drive.google.com/file/d/1nBuWmxfUwJS62bvYS8Rd4uILtUo8OZQi/view?usp=drive_link",
+                "https://drive.google.com/file/d/1AVrh1JIKkSwBnSXvoCXhPITzJdF-9d5c/view?usp=sharing",
               )
             }
             className="focus:outline-none focus:ring-1 focus:ring-lime-500"
