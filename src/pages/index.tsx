@@ -36,12 +36,11 @@ export default function Home() {
               <div className="mt-2">
                 <ul className="list-inside list-disc font-sans marker:text-lime-500">
                   <li>
-                    Created a service generating approximately 28 million KRW in
-                    monthly revenue with 4 regular workers.
-                  </li>
-                  <li>
-                    Have a experience of developing and maintaining Subway KIOSK
-                    program.
+                    Created a service generating approximately{" "}
+                    <span className="font-semibold text-lime-500">
+                      28 million KRW
+                    </span>{" "}
+                    in monthly revenue in a 4-person startup.
                   </li>
                 </ul>
               </div>
@@ -61,10 +60,10 @@ export default function Home() {
                   <li>Go</li>
                   <li>Zod</li>
                   <li>React</li>
+                  <li>Next.JS</li>
                   <li>Redux</li>
                   <li>React Query</li>
                   <li>React Hook Form</li>
-                  <li>Next.JS</li>
                   <li>Prisma</li>
                   <li>tRPC</li>
                 </ul>
